@@ -1,0 +1,16 @@
+.contentWrapper {
+}
+
+.contentInner {
+    display: flex;
+}
+
+.anotherWrapper {
+    width: 80%;
+    padding-top: 1vw;
+    font-size: 2vw;
+}
+
+.spacer {
+    width: 10%;
+}
