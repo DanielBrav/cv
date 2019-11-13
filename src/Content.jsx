@@ -70,7 +70,7 @@ export default class Content extends React.Component {
 
     }).bind(this);
   }
-  
+
   generateContact() {
     return (
       <div>
@@ -114,6 +114,22 @@ export default class Content extends React.Component {
                   pursuing a degree of Computer Science in Ben Gurion University of the Negev.
                   I am very motivated and hard working person, and software development
                   is my real passion.
+                  <br /><br /><br />
+                  Some of my interests
+                  <br /><br />
+                  <div className="circles">
+                    <div className="circle">
+                      SNOOKER
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div className="circle">
+                      READING
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div className="circle">
+                      MINDFULNESS
+                    </div>
+                  </div>
               </div>
             </div>
         </div>

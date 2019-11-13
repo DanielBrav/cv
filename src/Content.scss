@@ -417,3 +417,36 @@
     justify-content: center;
     align-items: center;
   }
+
+
+  @keyframes circleColor {
+    from { background-color: #817e7e; }//opacity: 0; }
+    to   { background-color: #A4DE02; }//margin-top: 5vw; }// opacity: 1; }
+  }
+
+  .circles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circle {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: #817e7e;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.2s linear;
+    font-size: 1vw;
+    opacity: 0.6;
+  }
+
+  .circle:hover {
+    background-color: #A4DE02;
+    color: #000000;
+    opacity: 1;
+    transition: all 0.2s linear;
+  }
