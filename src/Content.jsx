@@ -340,6 +340,7 @@ export default class Content extends React.Component {
               <div className="theWords">
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage8" /> 
                     <div className="smallLogoTitle">
                       C
                     </div>
@@ -351,6 +352,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage7" /> 
                     <div className="smallLogoTitle">
                       C++
                     </div>
@@ -362,6 +364,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage2" /> 
                     <div className="smallLogoTitle">
                       C#
                     </div>
@@ -373,6 +376,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage8" /> 
                     <div className="smallLogoTitle">
                       Java
                     </div>
@@ -384,6 +388,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage4" /> 
                     <div className="smallLogoTitle">
                       Python
                     </div>
@@ -395,6 +400,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage6" /> 
                     <div className="smallLogoTitle">
                       TypeScript
                     </div>
@@ -408,11 +414,9 @@ export default class Content extends React.Component {
               <div className="someLogoSmall">
             
                 <div className="someLogoSmallWrap">
-                  <div className="precentage">
-                    
-                  </div>
+                  <div className="precentage6" /> 
                   <div className="smallLogoTitle">
-                    Assembley (x86)
+                    Assembly (x86)
                   </div>
                   <div className="imageDiv">
                     <img src={asm} className="imageSmall" alt="Assembley" />
