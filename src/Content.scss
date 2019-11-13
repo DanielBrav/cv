@@ -444,9 +444,26 @@
     opacity: 0.6;
   }
 
+  .svg {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .iconSVG {
+    height: 2vw;
+    width: 2vw;
+    fill: #FFFFFF;
+    transition: all 0.2s linear;
+  }
+
   .circle:hover {
     background-color: #A4DE02;
     color: #000000;
     opacity: 1;
     transition: all 0.2s linear;
+    .iconSVG {
+      transition: all 0.2s linear;
+      fill: #000000;
+    }
   }
