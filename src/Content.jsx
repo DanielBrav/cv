@@ -22,6 +22,7 @@ import csharp from './csharp.png';
 import java from './java.png';
 import python from './python.jpg';
 import ts from './typescript.png';
+import sql from './sql.jpg';
 
 export default class Content extends React.Component {
   constructor(props) {
@@ -254,6 +255,7 @@ export default class Content extends React.Component {
               <div className="theWords">
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage8" /> 
                     <div className="smallLogoTitle">
                       HTML 5
                     </div>
@@ -265,6 +267,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage8" /> 
                     <div className="smallLogoTitle">
                       JavaScript
                     </div>
@@ -276,6 +279,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage8" /> 
                     <div className="smallLogoTitle">
                       CSS
                     </div>
@@ -287,6 +291,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage7" /> 
                     <div className="smallLogoTitle">
                       Angular
                     </div>
@@ -298,6 +303,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage8" /> 
                     <div className="smallLogoTitle">
                       React
                     </div>
@@ -309,6 +315,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
+                    <div className="precentage4" /> 
                     <div className="smallLogoTitle">
                       PHP
                     </div>
@@ -412,7 +419,26 @@ export default class Content extends React.Component {
                 </div>
               </div>
 
-            </div>         
+            </div>   
+
+            <div className="lineItem">
+              <div className="theLogo">
+                Databases
+              </div>
+              <div className="theWords">
+                <div className="someLogoSmall">
+                  <div className="someLogoSmallWrap">
+                    <div className="precentage8" /> 
+                    <div className="smallLogoTitle">
+                      SQL
+                    </div>
+                    <div className="imageDiv">
+                      <img src={sql} className="imageSmall" alt="SQL" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
           </div>
         </div>
