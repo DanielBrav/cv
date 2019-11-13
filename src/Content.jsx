@@ -73,43 +73,31 @@ export default class Content extends React.Component {
   generateContact() {
     return (
       <div>
-        <div style={{ color: '#07575B' }}><b>Contact me</b></div>
-        <p className="educationParagraph">
           <div className="contactInfo">
             <div className="phoneNumber">
               <div className="phoneSVG">
                 <svg className="phone" fill="#003B46" viewBox="0 0 24 24"><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
               </div>
-              <div className="theNumber">
+              {/*<div className="theNumber">
                 0543038394
-              </div>
+              </div>*/}
             </div>
             <div className="phoneNumber">
               <div className="phoneSVG">
                 <svg className="email" fill="#003B46" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
-              </div>
-              <div className="theNumber">
-                &nbsp;bravdani@post.bgu.ac.il
               </div>
             </div>
             <div className="phoneNumber">
               <div className="phoneSVG">
                 <svg className="linkedin" fill="#003B46" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
               </div>
-              <div className="theNumber">
-                &nbsp;LinkedIn
-              </div>
             </div>
             <div className="phoneNumber">
               <div className="phoneSVG">
                 <svg className="facebook" fill="#003B46" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
               </div>
-              <div className="theNumber">
-              &nbsp;Facebook
-              </div>
             </div>
         </div>
-        </p>
       </div>
     )
   }
@@ -462,37 +450,44 @@ export default class Content extends React.Component {
 
     return (
         <div className={logoAndName}>
-          <div className="headline">
-              <div className="name">DANIEL BRAVERMAN,&nbsp;</div>
-              <div className={slogan}>Software developer.</div>
-          </div>
-          <div className={buttons}>
-              <div className="button">
-                <div className={aboutButton} onClick={() => this.changePage(0)}>
-                  ABOUT
-                </div>
-              </div>
-              <div className="button">
-                <div className={eduButton} onClick={() => this.changePage(1)}>
-                  EDUCATION
-                </div>
-              </div>
-              <div className="button">
-                <div className={expButton} onClick={() => this.changePage(2)}>
-                  EXPERIENCE
-                </div>
-              </div>
-              <div className="button">
-                <div className={skillsButton} onClick={() => this.changePage(3)}>
-                  CODING SKILLS
-                </div>
-              </div>
 
-              <div className="button">
-                <div className="buttonText" onClick={() => this.changePage(4)}>
-                  CONTACT
+          <div className="logoAndNameContact">
+              {this.generateContact()}
+          </div>
+
+          <div className="headlineAndButtons">
+            <div className="headline">
+                <div className="name">DANIEL BRAVERMAN,&nbsp;</div>
+                <div className={slogan}>Software developer.</div>
+            </div>
+            <div className={buttons}>
+                <div className="button">
+                  <div className={aboutButton} onClick={() => this.changePage(0)}>
+                    ABOUT
+                  </div>
                 </div>
-              </div>
+                <div className="button">
+                  <div className={eduButton} onClick={() => this.changePage(1)}>
+                    EDUCATION
+                  </div>
+                </div>
+                <div className="button">
+                  <div className={expButton} onClick={() => this.changePage(2)}>
+                    EXPERIENCE
+                  </div>
+                </div>
+                <div className="button">
+                  <div className={skillsButton} onClick={() => this.changePage(3)}>
+                    CODING SKILLS
+                  </div>
+                </div>
+
+                <div className="button">
+                  <div className="buttonText" onClick={() => this.changePage(4)}>
+                    CONTACT
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
     )

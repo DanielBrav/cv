@@ -292,7 +292,7 @@
 
   .logoAndName {
     padding-top: 4vh;
-    display: flex;
+    //display: flex;
     padding-left: 8vw;
     position: fixed;
     z-index: 100;
@@ -353,19 +353,20 @@
   
   .buttonText {
     text-align: center;
-    
     font-size: 1vw;
     cursor: pointer;
+    transition: all 0.15s linear;
    // border-bottom: 0.2vw solid #AEBD38;
   }
   
   .buttonText:hover {
-    color: #66A5AD;
+    color: #A4DE02;
     border-bottom: none;
     border-top: 0.2vw solid #A4DE02;
   }
   
   .selected {
+    color: #A4DE02;
     text-align: center;
     font-size: 1vw;
     cursor: pointer;
@@ -375,7 +376,7 @@
   
   .phoneNumber {
     display: flex;
-    padding-right: 2vw;
+    padding-right: 1vw;
     cursor: pointer;
   }
   
@@ -394,23 +395,25 @@
     }
   }
   
-  
-  .contactInfo {
-    font-size: 1vw;
-    padding-left: 8vw;
+  .headlineAndButtons {
     display: flex;
-    color: #003B46;
+  }
+  .contactInfo {
+    font-size: 0.8vw;
+    padding-left: 77.6vw;
+    display: flex;
+    position: relative;
+    z-index: 200;
   }
   
   .phoneSVG {
-    width: 4vw;
-    height: 4vh;
+    width: 1vw;
+    height: 1vh;
   }
   
   .theNumber {
-    font-size: 1.5vw;
+   // font-size: 0.8vw;
     font-weight: 600;
     justify-content: center;
     align-items: center;
-    padding-top: 1vw;
   }
