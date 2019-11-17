@@ -1,0 +1,11 @@
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contentDiv {
+    width: 100vw;
+}
