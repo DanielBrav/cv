@@ -152,7 +152,7 @@ export default class Content extends React.Component {
         <div className="aboutParagraph" ref={this.aboutRef}>
           <div className="blackScreen">
             <div className="aboutContent">
-              <div className="hi">Hello!22</div><br />
+              <div className="hi">Hi!</div><br />
               <div className="aboutWords">
                   My name is Daniel Braverman; I am currently
                   pursuing a degree of Computer Science in Ben Gurion University of the Negev.
