@@ -203,6 +203,7 @@ export default class Content extends React.Component {
                   </div>
                 </div>
               </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <div className="rightSide">
                 <div className="hi">Contact Details</div>
                 <div className="aboutWords">
