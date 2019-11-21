@@ -155,10 +155,11 @@ export default class Content extends React.Component {
               <div className="leftSide">
                 <div className="hi">About me</div>
                 <div className="aboutWords">
-                    My name is Daniel Braverman; I am currently
+                    Hi! My name is Daniel Braverman; I am currently
                     pursuing a degree of Computer Science in Ben Gurion University of the Negev.
-                    I am very motivated and hard working person, and software development
-                    is my real passion.
+                    I am very motivated and hard working person that loves to face challanges, and software development
+                    is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
+
                 </div>
                 <div className="hi" style={{ paddingTop: '8vh' }}>Education</div>
                 <div className="aboutWords">
@@ -203,7 +204,7 @@ export default class Content extends React.Component {
                   </div>
                 </div>
               </div>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <div className="rightSide">
                 <div className="hi">Contact Details</div>
                 <div className="aboutWords">
@@ -260,21 +261,24 @@ export default class Content extends React.Component {
   generateExperience() {
     const { location } = this.state;
     const hide = location === -1 ? "hidden" : "visible";
-    const educationParagraph = classNames("educationParagraph", "expBg");
+    const educationParagraph = classNames("educationParagraph");
     const educationContent = classNames("educationContent", "blackScreenPar");
     return (
       <div className={educationParagraph} ref={this.experienceRef}>
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
-              Experience
+              Working Experience
             </div>
-            <div className="subTitle">
+            {/*<div className="subTitle">
               <i><u>Working experience</u></i>
-            </div>
+            </div>*/}
             <div className="lineItem">
               <div className="theLogo">
-                <img src={bright} className="someLogo" />
+                {/*<img src={bright} className="someLogo" />*/}
+                <div className="circleBigger">
+                  BrightSource
+                </div>
               </div>
               <div className="theWords">
                 2018 -  Ashalim solar power plant control room operator (BrightSource): <br />
@@ -288,7 +292,10 @@ export default class Content extends React.Component {
 
             <div className="lineItem">
               <div className="theLogo">
-                <img src={nach} className="someLogo" />
+                {/*<img src={nach} className="someLogo" />*/}
+                <div className="circleBigger">
+                  Nachshon
+                </div>
               </div>
               <div className="theWords">
                 2016-2019: Private tutor of Mathematics – 5 unit high school students
@@ -296,7 +303,10 @@ export default class Content extends React.Component {
             </div>
             <div className="lineItem">
               <div className="theLogo">
-                <img src={gs} className="someLogo" />
+                {/*<img src={gs} className="someLogo" />*/}
+                <div className="circleBigger">
+                  Gan Shmuel Group
+                </div>
               </div>
               <div className="theWords">
                 2014-2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):<br />
@@ -308,12 +318,15 @@ export default class Content extends React.Component {
               </div>
             </div>
             <br />
-            <div className="subTitle">
-              <i><u>University projects</u></i>
+            <div className="hi">
+              University projects
             </div>
             <div className="lineItem">
               <div className="theLogo">
-                <img src={linux} className="someLogo" />
+                {/*<img src={linux} className="someLogo" />*/}
+                <div className="circleBigger">
+                  Linux Based Terminal
+                </div>
               </div>
               <div className="theWords">
                 Linux based Terminal – An object-oriented system written in C++. The main goal of this project was to gain implementation experience in C++ while using classes, standard data structures and unique C++ properties such as the “Rule of 5”, Handling memory in C++ and avoiding memory leaks.
@@ -321,7 +334,10 @@ export default class Content extends React.Component {
             </div>
             <div className="lineItem">
               <div className="theLogo">
-                <img src={bb} className="someLogo" />
+                {/*<img src={bb} className="someLogo" />*/}
+                <div className="circleBigger">
+                  BlockBuster
+                </div>
               </div>
               <div className="theWords">
                 Online Movie Rental Service – Server and Client performed using a text-based communication, as the Server was implemented in Java and the Client was implemented in C++. The main topics of this project were server-client communication, concurrency and object-oriented programming in Java and C++.    
@@ -593,11 +609,11 @@ export default class Content extends React.Component {
                     ABOUT
                   </div>
                 </div>
-                <div className="button">
+                {/*<div className="button">
                   <div className={eduButton} onClick={() => this.changePage(1)}>
                     EDUCATION
                   </div>
-                </div>
+                </div>*/}
                 <div className="button">
                   <div className={expButton} onClick={() => this.changePage(2)}>
                     EXPERIENCE
@@ -639,7 +655,7 @@ export default class Content extends React.Component {
 
         {this.generateAbout()}
 
-        {this.generateEducation()}
+        {/*{this.generateEducation()}*/}
 
         {this.generateExperience()}
 
