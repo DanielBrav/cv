@@ -13,17 +13,28 @@
 }
 
 .blackScreen {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
   height: 100vh;
 }
 
 
 .aboutContent {
   font-size: 1.6vw;
-  padding-left: 8vw;
+  padding-left: 15vw;
   padding-right: 12vw;
-  padding-top: 15vh;
+  padding-top: 13vh;
+  display: flex;
 }
+
+.aboutWords {
+  padding-top: 0.8vh;
+  font-size: 1.2vw;
+}
+
+.leftSide {
+  width: 70%;
+}
+
 
 .aboutParagraph {
     background-image: url('bg.jpg');
@@ -35,8 +46,10 @@
 }
 
 .hi {
-    font-size: 5vw;
+    width: 15vw;
+    font-size: 1.6vw;
     font-weight: 600;
+    border-bottom: 0.2vw dotted #000000;
 }
 
 .educationParagraph {
@@ -291,14 +304,16 @@
   }
 
   .logoAndName {
-    padding-top: 4vh;
+    padding-top: 3vh;
     //display: flex;
     padding-left: 8vw;
     position: fixed;
     z-index: 100;
     width: 100vw;
-    padding-bottom: 4vh;
+    padding-bottom: 1.5vh;
     animation: fadein 0.15s;
+    background-color: #000000;
+    color: #FFFFFF;
   }
 
   .hidden {
@@ -331,13 +346,6 @@
   .slogan {
     padding-top: 0.4vw;
     font-size: 1.6vw;
-  }
-  
-  .sloganWhiteBorder {
-    border-bottom: 0.18vw solid #FFFFFF;
-  }
-  
-  .sloganBlackBorder {
     border-bottom: 0.2vw solid #A4DE02;
   }
 
@@ -426,14 +434,11 @@
 
   .circles {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .circle {
-    height: 10vw;
-    width: 10vw;
-    border-radius: 50%;
+    height: 8vw;
+    width: 8vw;
     background-color: #817e7e;
     color: #FFFFFF;
     justify-content: center;

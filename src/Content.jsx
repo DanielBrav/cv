@@ -149,18 +149,24 @@ export default class Content extends React.Component {
 
   generateAbout() {
     return (
-        <div className="aboutParagraph" ref={this.aboutRef}>
+        <div ref={this.aboutRef}>
           <div className="blackScreen">
             <div className="aboutContent">
-              <div className="hi">Hi!</div><br />
-              <div className="aboutWords">
-                  My name is Daniel Braverman; I am currently
-                  pursuing a degree of Computer Science in Ben Gurion University of the Negev.
-                  I am very motivated and hard working person, and software development
-                  is my real passion.
-                  <br /><br /><br />
-                  Some of my interests
-                  <br /><br />
+              <div className="leftSide">
+                <div className="hi">About me</div>
+                <div className="aboutWords">
+                    My name is Daniel Braverman; I am currently
+                    pursuing a degree of Computer Science in Ben Gurion University of the Negev.
+                    I am very motivated and hard working person, and software development
+                    is my real passion.
+                </div>
+                <div className="hi" style={{ paddingTop: '8vh' }}>Education</div>
+                <div className="aboutWords">
+                    I am currently in my 4<sup>th</sup> year towards Computer Science BSc.
+                    in Ben Gurion University of the Negev.
+                </div>
+                <div className="hi" style={{ paddingTop: '8vh' }}>Interests</div>
+                <div className="aboutWords">
                   <div className="circles">
                     <div className="circle">
                       <div className="circleContent">
@@ -172,7 +178,7 @@ export default class Content extends React.Component {
                         </div>
                       </div>
                     </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
                     <div className="circle">
                       <div className="circleContent">
                         <div className="svg">
@@ -183,7 +189,7 @@ export default class Content extends React.Component {
                         </div>
                       </div>
                     </div>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;
                     <div className="circle">
                       <div className="circleContent">
                         <div className="svg">
@@ -195,6 +201,18 @@ export default class Content extends React.Component {
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div className="rightSide">
+                <div className="hi">Contact Details</div>
+                <div className="aboutWords">
+                  <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                  &nbsp;Tel Aviv, Israel<br />
+                  <svg width="24" height="24" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
+                  &nbsp;(+972) 54 30 38 394<br />
+                  <svg width="24" height="24" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                  &nbsp;bravdani@post.bgu.ac.il
+                </div>
               </div>
             </div>
         </div>
@@ -547,8 +565,8 @@ export default class Content extends React.Component {
   generateHeader(black) {
     const { location } = this.state; 
     const hide = location === -1 ? "hidden" : "visible";
-    const logoAndName = classNames("logoAndName", black ? "black" : "white");
-    const slogan = classNames("slogan", black ? "sloganBlackBorder" : "sloganWhiteBorder");
+    const logoAndName = classNames("logoAndName");
+    const slogan = classNames("slogan");
     const buttons = classNames("buttons");
     const aboutButton = classNames(location === 0 ? "selected" : "buttonText");
     const eduButton = classNames(location === 1 ? "selected" : "buttonText");
@@ -558,9 +576,10 @@ export default class Content extends React.Component {
     return (
         <div className={logoAndName}>
 
-          <div className="logoAndNameContact">
+          {/*<div className="logoAndNameContact">
               {this.generateContact()}
           </div>
+          */}
 
           <div className="headlineAndButtons">
             <div className="headline">
@@ -615,7 +634,7 @@ export default class Content extends React.Component {
       <div className="contentWrapper">
 
 
-        {this.whichHeader(location)}
+        {this.whichHeader(1)}
 
         {this.generateAbout()}
 
