@@ -584,7 +584,7 @@ export default class Content extends React.Component {
 
           <div className="headlineAndButtons">
             <div className="headline">
-                <div className="name">DANIEL BRAVERMAN,&nbsp;</div>
+                <div className="name">DANIEL BRAVERMAN</div>
                 <div className={slogan}>Software developer.</div>
             </div>
             <div className={buttons}>
