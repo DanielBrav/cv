@@ -52,6 +52,7 @@
     border-bottom: 0.2vw dotted #000000;
 }
 
+
 .educationParagraph {
     min-height: 100vh;
 }
@@ -106,11 +107,27 @@
   background-repeat: no-repeat;
 }
 
+@keyframes wordsBGin {
+  from { background-color: transparent;  }//opacity: 0; }
+  to { background-color: #A4DE02; }//margin-top: 5vw; }// opacity: 1; }
+}
+
+@keyframes wordsBGout {
+  from { background-color: #A4DE02;  }//opacity: 0; }
+  to { background-color: transparent; }//margin-top: 5vw; }// opacity: 1; }
+}
+
 .theWords {
   display: flex;
   font-size: 1vw;
   padding-left: 1vw;
   width: 80%;
+  animation: wordsBGout 0.3s;
+}
+
+.theWords:hover {
+  animation: wordsBGin 0.3s;
+  background-color: #A4DE02;
 }
 
 .theLogo {
@@ -183,9 +200,19 @@
   to   { width: 2vw; }//margin-top: 5vw; }// opacity: 1; }
 }
 
+@keyframes grow3 {
+  from { width: 0vw; }//opacity: 0; }
+  to   { width: 3vw; }//margin-top: 5vw; }// opacity: 1; }
+}
+
 @keyframes grow4 {
   from { width: 0vw; }//opacity: 0; }
   to   { width: 4vw; }//margin-top: 5vw; }// opacity: 1; }
+}
+
+@keyframes grow5 {
+  from { width: 0vw; }//opacity: 0; }
+  to   { width: 5vw; }//margin-top: 5vw; }// opacity: 1; }
 }
 
 @keyframes grow6 {
@@ -211,29 +238,37 @@
 
   .precentage2 {
     width: 2vw;
-    animation: grow2 1s;
+    animation: grow2 0.5s;
+  }
+  .precentage3 {
+    width: 3vw;
+    animation: grow3 0.5s;
   }
   .precentage4 {
     width: 4vw;
-    animation: grow4 1s;
+    animation: grow4 0.5s;
+  }
+  .precentage5 {
+    width: 5vw;
+    animation: grow5 0.5s;
   }
   .precentage6 {
     width: 6vw;
-    animation: grow6 1s;
+    animation: grow6 0.5s;
   }
   .precentage7 {
     width: 7vw;
-    animation: grow7 1s;
+    animation: grow7 0.5s;
   }
   .precentage8 {
     width: 8vw;
-    animation: grow8 1s;
+    animation: grow8 0.5s;
   }  
 }
 
-.precentage2, .precentage4, .precentage6, .precentage7, .precentage8 {
+.precentage2, .precentage3, .precentage4, .precentage5, .precentage6, .precentage7, .precentage8 {
   width: 0vw;
-  height: 1.2vw;
+  height: 1vw;
   background-color: green;
   position: absolute;
   z-index: 54;
@@ -450,8 +485,30 @@
     transition: all 0.2s linear;
     font-size: 1vw;
     opacity: 0.6;
+    user-select: none;
   }
   
+  .circleSmaller {
+    height: 5vw;
+    width: 5vw;
+    background-color: #817e7e;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.2s linear;
+    font-size: 1vw;
+    opacity: 0.6;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .circleSmallerContent {
+    height: 5vw;
+    width: 5vw;
+  }
+
+
   .circleBigger {
     height: 10vw;
     width: 10vw;
@@ -463,6 +520,7 @@
     transition: all 0.2s linear;
     font-size: 1vw;
     opacity: 0.6;
+    user-select: none;
   }
 
 
@@ -478,6 +536,22 @@
     fill: #FFFFFF;
     transition: all 0.2s linear;
   }
+
+  .smallerIconSVG {
+    height: 1vw;
+    width: 1vw;
+    fill: #FFFFFF;
+    transition: all 0.2s linear;
+  }
+
+
+  .bigIconSVG {
+    height: 4vw;
+    width: 4vw;
+    fill: #FFFFFF;
+    transition: all 0.2s linear;
+  }
+
 
   .circle:hover {
     background-color: #A4DE02;
@@ -495,8 +569,57 @@
     color: #000000;
     opacity: 1;
     transition: all 0.2s linear;
-    .iconSVG {
+    .bigIconSVG {
       transition: all 0.2s linear;
       fill: #000000;
     }
+  }
+
+  .circleSmaller:hover {
+    background-color: #A4DE02;
+    color: #000000;
+    opacity: 1;
+    transition: all 0.2s linear;
+    .smallerIconSVG {
+      transition: all 0.2s linear;
+      fill: #000000;
+    }
+    .precentage2 {
+      width: 2vw;
+      animation: grow2 0.5s;
+    }
+    .precentage3 {
+      width: 3vw;
+      animation: grow3 0.5s;
+    }
+    .precentage4 {
+      width: 4vw;
+      animation: grow4 0.5s;
+    }
+    .precentage5 {
+      width: 5vw;
+      animation: grow5 0.5s;
+    }
+    .precentage6 {
+      width: 6vw;
+      animation: grow6 1s;
+    }
+    .precentage7 {
+      width: 7vw;
+      animation: grow7 1s;
+    }
+    .precentage8 {
+      width: 8vw;
+      animation: grow8 1s;
+    }  
+  }
+
+  .contactDetailWrapper {
+    padding-top: 1vw;
+    display: flex;
+  }
+
+  .detailTitle {
+    width: 8vw;
+    border-bottom: 0.1vw dotted #000000;
   }

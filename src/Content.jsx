@@ -40,6 +40,69 @@ export default class Content extends React.Component {
     this.loation = 0;
   }
 
+  nachSVG() {
+    return (
+      <svg className="bigIconSVG" viewBox="0 0 24 24"><path d="M6 3.447h-1v-1.447h19v16h-7.731l2.731 4h-1.311l-2.736-4h-1.953l-2.736 4h-1.264l2.732-4h-2.732v-1h8v-1h3v1h3v-14h-17v.447zm2.242 17.343c-.025.679-.576 1.21-1.256 1.21-.64 0-1.179-.497-1.254-1.156l-.406-4.034-.317 4.019c-.051.656-.604 1.171-1.257 1.171-.681 0-1.235-.531-1.262-1.21l-.262-6.456-.308.555c-.241.437-.8.638-1.265.459-.404-.156-.655-.538-.655-.951 0-.093.012-.188.039-.283l1.134-4.098c.17-.601.725-1.021 1.351-1.021h4.096c.511 0 1.012-.178 1.285-.33.723-.403 2.439-1.369 3.136-1.793.394-.243.949-.147 1.24.217.32.396.286.95-.074 1.297l-3.048 2.906c-.375.359-.595.849-.617 1.381-.061 1.397-.3 8.117-.3 8.117zm-5.718-10.795c-.18 0-.34.121-.389.294-.295 1.04-1.011 3.666-1.134 4.098l1.511-2.593c.172-.295.623-.18.636.158l.341 8.797c.01.278.5.287.523.002 0 0 .269-3.35.308-3.944.041-.599.449-1.017.992-1.017.547.002.968.415 1.029 1.004.036.349.327 3.419.385 3.938.043.378.505.326.517.022 0 0 .239-6.725.3-8.124.033-.791.362-1.523.925-2.061l3.045-2.904c-.661.492-2.393 1.468-3.121 1.873-.396.221-1.07.457-1.772.457h-4.096zm16.476 1.005h-5v-1h5v1zm2-2h-7v-1h7v1zm-15.727-4.994c-1.278 0-2.315 1.038-2.315 2.316 0 1.278 1.037 2.316 2.315 2.316s2.316-1.038 2.316-2.316c0-1.278-1.038-2.316-2.316-2.316zm0 1c.726 0 1.316.59 1.316 1.316 0 .726-.59 1.316-1.316 1.316-.725 0-1.315-.59-1.315-1.316 0-.726.59-1.316 1.315-1.316zm15.727 1.994h-7v-1h7v1z"/></svg>
+    );
+  }
+
+  primorSVG() {
+    return (
+      <svg className="bigIconSVG" viewBox="0 0 24 24"><path d="M24 24h-24v-18h6v6l6-4v4.008l6-4.008v4.017l6-4.017v16zm-20-16h-2v14h20v-10l-6 4v-4l-6 4v-4l-6 4v-8zm11 12h-2v-3h2v3zm-4 0h-2v-3h2v3zm-4 0h-2v-3h2v3zm12 0h-2v-3h2v3zm-16-15h-1c.198-2.182 1.785-4 3.5-4 .246 0 .478.059.683.164.316-.687 1.011-1.164 1.817-1.164s1.501.477 1.817 1.164c.205-.105.437-.164.683-.164.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5c-.246 0-.478-.059-.683-.164-.316.687-1.011 1.164-1.817 1.164-2.345 0-3.722-2.951-5 0z"/></svg>
+    )
+  }
+
+  brightSVG() {
+    return (
+      <svg className="bigIconSVG" viewBox="0 0 200 200">
+        <metadata>
+        Created by potrace 1.15, written by Peter Selinger 2001-2017
+        </metadata>
+        <g transform="translate(0.000000,180.000000) scale(0.100000,-0.100000)" stroke="none">
+        <path d="M210 1682 l0 -47 306 -305 c169 -168 304 -298 301 -290 -3 8 -27 65
+        -52 125 -67 157 -151 356 -192 455 -19 47 -40 91 -45 98 -8 9 -53 12 -164 12
+        l-154 0 0 -48z"/>
+        <path d="M590 1720 c0 -14 270 -653 281 -664 5 -6 9 127 9 332 l0 342 -145 0
+        c-90 0 -145 -4 -145 -10z"/>
+        <path d="M931 1333 c0 -263 2 -294 14 -268 22 47 235 553 235 558 0 3 -56 6
+        -125 6 l-125 2 1 -298z"/>
+        <path d="M1231 1608 c-5 -13 -19 -45 -31 -73 -12 -27 -59 -138 -105 -245 -45
+        -107 -90 -213 -99 -235 -14 -33 34 11 258 235 249 247 276 278 276 307 l0 33
+        -145 0 c-142 0 -146 -1 -154 -22z"/>
+        <path d="M207 1551 c-1 -3 -1 -79 1 -167 l3 -162 112 -47 c62 -26 148 -63 192
+        -82 44 -19 96 -41 115 -48 19 -7 62 -25 95 -40 50 -22 57 -24 43 -8 -62 68
+        -559 560 -561 554z"/>
+        <path d="M1273 1236 c-134 -134 -243 -246 -243 -248 0 -3 69 23 153 59 83 35
+        196 83 250 105 l97 41 0 143 c0 79 -3 144 -7 143 -5 0 -117 -109 -250 -243z"/>
+        <path d="M208 1081 c-2 -47 -2 -101 0 -118 l3 -33 277 1 c212 0 271 3 252 11
+        -38 17 -94 41 -230 98 -69 29 -164 69 -212 90 l-87 38 -3 -87z"/>
+        <path d="M1305 1044 c-110 -47 -213 -91 -230 -99 -26 -12 -1 -13 213 -14 l242
+        -1 0 100 c0 74 -3 100 -12 99 -7 0 -103 -39 -213 -85z"/>
+        <path d="M297 873 c-13 -12 -8 -193 5 -193 12 0 305 121 412 170 l61 29 -236
+        0 c-130 1 -239 -2 -242 -6z"/>
+        <path d="M1088 853 c30 -14 102 -45 160 -70 242 -101 343 -143 347 -143 3 0 5
+        54 5 120 l0 120 -282 -1 -283 -1 53 -25z"/>
+        <path d="M747 809 c-9 -6 -75 -34 -146 -64 -71 -29 -144 -60 -163 -68 -18 -8
+        -59 -27 -90 -40 l-58 -26 0 -135 c0 -75 3 -136 8 -136 4 0 115 108 247 240
+        218 218 255 260 202 229z"/>
+        <path d="M1030 818 c0 -2 127 -131 283 -286 l282 -282 3 162 c2 122 -1 163
+        -10 170 -7 4 -62 28 -123 54 -60 25 -139 58 -175 74 -54 24 -198 86 -247 107
+        -7 3 -13 3 -13 1z"/>
+        <path d="M990 769 c0 -4 46 -114 101 -245 56 -132 121 -285 144 -342 23 -56
+        44 -104 46 -106 2 -2 75 -6 162 -9 l157 -5 0 53 0 53 -305 304 c-168 167 -305
+        300 -305 297z"/>
+        <path d="M548 510 c-224 -227 -256 -263 -254 -287 l3 -28 140 -3 c127 -2 141
+        -1 146 15 3 10 49 119 102 243 124 290 136 320 127 320 -4 0 -123 -117 -264
+        -260z"/>
+        <path d="M832 665 c-23 -55 -78 -183 -121 -285 l-79 -185 120 -3 c66 -1 122
+        -1 125 1 2 2 2 132 1 288 l-3 283 -43 -99z"/>
+        <path d="M933 416 l2 -348 133 -5 c73 -2 140 -2 147 1 11 4 5 26 -26 98 -22
+        51 -86 201 -141 333 -55 132 -104 247 -109 255 -5 9 -8 -132 -6 -334z"/>
+        </g>
+        </svg>
+    );
+  }
+
   componentDidMount() {
     const height = window.innerHeight;
     window.onscroll = (function() {
@@ -111,7 +174,7 @@ export default class Content extends React.Component {
 
   bookSVG() {
     return (
-      <svg svg className="iconSVG" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <svg className="iconSVG" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
         <g>
           <path d="M240,356.071V132.12c0-4.143-3.357-7.5-7.5-7.5s-7.5,3.357-7.5,7.5v223.951c0,4.143,3.357,7.5,7.5,7.5
             S240,360.214,240,356.071z"/>
@@ -206,14 +269,73 @@ export default class Content extends React.Component {
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <div className="rightSide">
-                <div className="hi">Contact Details</div>
+                <div className="hi">Contact</div>
                 <div className="aboutWords">
-                  <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
-                  &nbsp;Tel Aviv, Israel<br />
-                  <svg width="24" height="24" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
-                  &nbsp;(+972) 54 30 38 394<br />
-                  <svg width="24" height="24" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
-                  &nbsp;bravdani@post.bgu.ac.il
+                  <div className="detailTitle">
+                    General
+                  </div>
+                  <div className="contactDetailWrapper">
+                    <div classNames="contactSVG">
+                      <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                    </div>
+                    <div className="contactDetails">
+                      &nbsp;Tel Aviv, Israel
+                    </div>
+                  </div>
+                  <div className="contactDetailWrapper">
+                    <div classNames="contactSVG">
+                    <svg width="24" height="24" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
+                    </div>
+                    <div className="contactDetails" style={{ paddingTop: '0.5vw' }}>
+                      &nbsp;(+972) 54 30 38 394
+                    </div>
+                  </div>
+                  <div className="contactDetailWrapper">
+                    <div classNames="contactSVG">
+                    <svg width="24" height="24" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                    </div>
+                    <div className="contactDetails" style={{ paddingTop: '0.3vw' }}>
+                      &nbsp;daniel.braverm@gmail.com
+                    </div>
+                  </div>
+                  <br />
+                  <div className="detailTitle">
+                    Social media
+                  </div>
+                  <div className="circles" style={{ paddingTop: '0.5vw'}}>
+                    <div className="circleSmaller">
+                      <div className="circleContent">
+                        <div className="svg">
+                          <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+                        </div>
+                        <div className="title" style={{ fontSize: '0.9vw'}}>
+                          Facebook
+                        </div>
+                      </div>
+                    </div>
+                    &nbsp;
+                    <div className="circleSmaller">
+                      <div className="circleContent">
+                        <div className="svg">
+                          <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </div>
+                        <div className="title" style={{ fontSize: '0.9vw'}}>
+                          LinkedIn
+                        </div>
+                      </div>
+                    </div>
+                    &nbsp;
+                    <div className="circleSmaller">
+                      <div className="circleContent">
+                        <div className="svg">
+                          <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+                        </div>
+                        <div className="title" style={{ fontSize: '0.9vw'}}>
+                          GitHub
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -268,7 +390,7 @@ export default class Content extends React.Component {
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
-              Working Experience
+              Working experience
             </div>
             {/*<div className="subTitle">
               <i><u>Working experience</u></i>
@@ -277,16 +399,23 @@ export default class Content extends React.Component {
               <div className="theLogo">
                 {/*<img src={bright} className="someLogo" />*/}
                 <div className="circleBigger">
-                  BrightSource
+                  <div>
+                    <div className="svg">
+                        {this.brightSVG()}
+                    </div>
+                    <div className="title">
+                      BrightSource
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="theWords">
-                2018 -  Ashalim solar power plant control room operator (BrightSource): <br />
-                Operation of solar field and power plant.<br />
-                Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
-                Real time problem solving and investigation of malfunctions.<br />
-                Using a variety of computer systems and data bases.<br />
-                Working in an international multicultural environment.
+                2018 -  Ashalim solar power plant control room operator (BrightSource)<br /><br />
+                • Operation of solar field and power plant.<br />
+                • Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
+                • Real time problem solving and investigation of malfunctions.<br />
+                • Using a variety of computer systems and data bases.<br />
+                • Working in an international multicultural environment.
               </div>
             </div>
 
@@ -294,7 +423,14 @@ export default class Content extends React.Component {
               <div className="theLogo">
                 {/*<img src={nach} className="someLogo" />*/}
                 <div className="circleBigger">
-                  Nachshon
+                  <div>
+                    <div className="svg">
+                        {this.nachSVG()}
+                    </div>
+                    <div className="title">
+                      Nachshon
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="theWords">
@@ -305,15 +441,22 @@ export default class Content extends React.Component {
               <div className="theLogo">
                 {/*<img src={gs} className="someLogo" />*/}
                 <div className="circleBigger">
-                  Gan Shmuel Group
+                  <div>
+                    <div className="svg">
+                        {this.primorSVG()}
+                    </div>
+                    <div className="title">
+                      Gan Shmuel Group
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="theWords">
-                2014-2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):<br />
-                Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
-                Production floor management and maintenance using computer systems (Citect SCADA software).<br />
-                Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
-                Conduction with senior executives – ongoing reports and presentation of results.<br />
+                2014-2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.)<br /><br />
+                • Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
+                • Production floor management and maintenance using computer systems (Citect SCADA software).<br />
+                • Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
+                • Conduction with senior executives – ongoing reports and presentation of results.<br />
                 
               </div>
             </div>
@@ -329,7 +472,9 @@ export default class Content extends React.Component {
                 </div>
               </div>
               <div className="theWords">
-                Linux based Terminal – An object-oriented system written in C++. The main goal of this project was to gain implementation experience in C++ while using classes, standard data structures and unique C++ properties such as the “Rule of 5”, Handling memory in C++ and avoiding memory leaks.
+                Linux based Terminal
+                <br /><br />
+                An object-oriented system written in C++. The main goal of this project was to gain implementation experience in C++ while using classes, standard data structures and unique C++ properties such as the “Rule of 5”, Handling memory in C++ and avoiding memory leaks.
               </div>
             </div>
             <div className="lineItem">
@@ -340,7 +485,9 @@ export default class Content extends React.Component {
                 </div>
               </div>
               <div className="theWords">
-                Online Movie Rental Service – Server and Client performed using a text-based communication, as the Server was implemented in Java and the Client was implemented in C++. The main topics of this project were server-client communication, concurrency and object-oriented programming in Java and C++.    
+                Online Movie Rental Service
+                <br /><br />
+                Server and Client performed using a text-based communication, as the Server was implemented in Java and the Client was implemented in C++. The main topics of this project were server-client communication, concurrency and object-oriented programming in Java and C++.    
               </div>
             </div>
 
@@ -354,8 +501,8 @@ export default class Content extends React.Component {
   generateSkills() {
     const { location } = this.state;
     const hide = location === -1 ? "hidden" : "visible";
-    const educationParagraph = classNames("educationParagraph", "skillsBg");
-    const educationContent = classNames("educationContent", "blackScreenPar");
+    const educationParagraph = classNames("educationParagraph");
+    const educationContent = classNames("educationContent", "blackScreen");
     return (
       <div className={educationParagraph} ref={this.skillsRef}>
         <div className={educationContent}>
@@ -363,198 +510,175 @@ export default class Content extends React.Component {
             <div className="hi">
               Coding skills
             </div>
-            <br />
-            <div className="lineItem">
-              <div className="theLogo">
+
+            <div className="detailTitle" style={{ paddingTop: '1vw', fontSize: '1vw', width: '10vw' }}>
                 Web development
-              </div>
-              <div className="theWords">
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage8" /> 
-                    <div className="smallLogoTitle">
-                      HTML 5
+            </div>
+
+            <div className="lineItem">
+              <div className="circles">
+                <div className="circleSmaller">
+                  <div className="circleSmallerContent">
+                    <div className="precentage5" /> 
+                    <div className="svg" style={{ paddingTop: '1.5vw' }}>
+                      <svg className="smallerIconSVG" viewBox="0 0 130 130">
+                        <path d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387 10.015-112.107h-109.936zm89.126 26.539l-.627 7.172-.276 3.289h-52.665000000000006l1.257 14h50.156000000000006l-.336 3.471-3.233 36.119-.238 2.27-28.196 7.749v.002l-.034.018-28.177-7.423-1.913-21.206h13.815000000000001l.979 10.919 15.287 4.081h.043v-.546l15.355-3.875 1.604-17.579h-47.698l-3.383-38.117-.329-3.883h68.939l-.33 3.539z"></path>
+                      </svg>
                     </div>
-                    <div className="imageDiv">
-                      <img src={html} className="imageSmall" alt="HTML5" />
+                    <div className="title" style={{ textAlign: 'center', fontSize: '0.9vw'}}>
+                      HTML
                     </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage8" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleSmallerContent">
+                    <div className="precentage5" /> 
+                    <div className="svg" style={{ paddingTop: '1.5vw' }}>
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <div className="title" style={{ textAlign: 'center', fontSize: '0.9vw'}}>
                       JavaScript
                     </div>
-                    <div className="imageDiv">
-                      <img src={js} className="imageSmall" alt="JavaScript" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage8" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleSmallerContent">
+                    <div className="precentage5" /> 
+                    <div className="svg" style={{ paddingTop: '1.5vw' }}>
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <div className="title" style={{ textAlign: 'center', fontSize: '0.9vw'}}>
                       CSS
                     </div>
-                    <div className="imageDiv">
-                      <img src={css} className="imageSmall" alt="CSS" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage7" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleSmallerContent">
+                    <div className="precentage4" /> 
+                    <div className="svg" style={{ paddingTop: '1.5vw' }}>
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <div className="title" style={{ textAlign: 'center', fontSize: '0.9vw'}}>
                       Angular
                     </div>
-                    <div className="imageDiv">
-                      <img src={angular} className="imageSmall" alt="Angular" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage8" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleSmallerContent">
+                    <div className="precentage5" /> 
+                    <div className="svg" style={{ paddingTop: '1.5vw' }}>
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <div className="title" style={{ textAlign: 'center', fontSize: '0.9vw'}}>
                       React
                     </div>
-                    <div className="imageDiv">
-                      <img src={react} className="imageSmall" alt="React" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage4" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleSmallerContent">
+                    <div className="precentage3" /> 
+                    <div className="svg" style={{ paddingTop: '1.5vw' }}>
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <div className="title" style={{ textAlign: 'center', fontSize: '0.9vw'}}>
                       PHP
                     </div>
-                    <div className="imageDiv">
-                      <img src={php} className="imageSmall" alt="PHP" />
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* another line of programming languages */}
-            <div className="lineItem">
-              <div className="theLogo">
+
+            <div className="detailTitle" style={{ paddingTop: '1vw', fontSize: '1vw', width: '15vw' }}>
                 Programming languages
-              </div>
-              <div className="theWords">
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage8" /> 
-                    <div className="smallLogoTitle">
+            </div>
+
+            <div className="lineItem">
+              <div className="circles">
+                <div className="circleSmaller">
+                  <div className="circleContent">
+                    <div className="svg">
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+                    </div>
+                    <div className="title" style={{ fontSize: '0.9vw'}}>
                       C
                     </div>
-                    <div className="imageDiv">
-                      <img src={c} className="imageSmall" alt="C" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage7" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleContent">
+                    <div className="svg">
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    <div className="title" style={{ fontSize: '0.9vw'}}>
                       C++
                     </div>
-                    <div className="imageDiv">
-                      <img src={cpp} className="imageSmall" alt="C++" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage2" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleContent">
+                    <div className="svg">
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+                    </div>
+                    <div className="title" style={{ fontSize: '0.9vw'}}>
                       C#
                     </div>
-                    <div className="imageDiv">
-                      <img src={csharp} className="imageSmall" alt="C#" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage8" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleContent">
+                    <div className="svg">
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+                    </div>
+                    <div className="title" style={{ fontSize: '0.9vw'}}>
                       Java
                     </div>
-                    <div className="imageDiv">
-                      <img src={java} className="imageSmall" alt="Java" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage4" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleContent">
+                    <div className="svg">
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+                    </div>
+                    <div className="title" style={{ fontSize: '0.9vw'}}>
                       Python
                     </div>
-                    <div className="imageDiv">
-                      <img src={python} className="imageSmall" alt="Python" />
-                    </div>
                   </div>
                 </div>
-
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage6" /> 
-                    <div className="smallLogoTitle">
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleContent">
+                    <div className="svg">
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
+                    </div>
+                    <div className="title" style={{ fontSize: '0.9vw'}}>
                       TypeScript
                     </div>
-                    <div className="imageDiv">
-                      <img src={ts} className="imageSmall" alt="TypeScript" />
-                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="someLogoSmall">
-            
-                <div className="someLogoSmallWrap">
-                  <div className="precentage6" /> 
-                  <div className="smallLogoTitle">
-                    Assembly (x86)
-                  </div>
-                  <div className="imageDiv">
-                    <img src={asm} className="imageSmall" alt="Assembley" />
-                  </div>
-                </div>
-              </div>
-
-            </div>   
-
-            <div className="lineItem">
-              <div className="theLogo">
-                Databases
-              </div>
-              <div className="theWords">
-                <div className="someLogoSmall">
-                  <div className="someLogoSmallWrap">
-                    <div className="precentage8" /> 
-                    <div className="smallLogoTitle">
-                      SQL
+                &nbsp;
+                <div className="circleSmaller">
+                  <div className="circleContent">
+                    <div className="svg">
+                      <svg className="smallerIconSVG" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
                     </div>
-                    <div className="imageDiv">
-                      <img src={sql} className="imageSmall" alt="SQL" />
+                    <div className="title" style={{ fontSize: '0.9vw'}}>
+                      Assembly
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
 
           </div>
         </div>
