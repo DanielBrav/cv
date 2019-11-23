@@ -404,14 +404,14 @@
   }
   
   .buttonText:hover {
-    font-weight: 600;
-    color: #A4DE02;
+    background-color: #A4DE02;
+    color: #000000;
     border-bottom: none;
+    transition: all 0.15s linear;
     //border-top: 0.2vw solid #A4DE02;
   }
   
   .selected {
-    font-weight: 600;
     color: #A4DE02;
     text-align: center;
     font-size: 1vw;
@@ -538,8 +538,8 @@
   }
 
   .smallerIconSVG {
-    height: 1vw;
-    width: 1vw;
+    height: 1.5vw;
+    width: 1.5vw;
     fill: #FFFFFF;
     transition: all 0.2s linear;
   }
@@ -615,7 +615,7 @@
   }
 
   .contactDetailWrapper {
-    padding-top: 1vw;
+    padding-top: 0.6vw;
     display: flex;
   }
 
