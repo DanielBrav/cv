@@ -386,7 +386,7 @@
 
   .buttons {
     display: flex;
-    padding-left: 18vw;
+    padding-left: 22vw;
   }
   
   .button {
@@ -622,4 +622,32 @@
   .detailTitle {
     width: 8vw;
     border-bottom: 0.1vw dotted #000000;
+  }
+  
+  .form {
+    padding-top: 0.5vw;
+    display: row;
+  }
+
+  .formName {
+    width: 15vw;
+    outline: none;
+  }
+
+  .formMessage {
+    width: 14.8vw;
+    height: 3vw;
+    resize: none;
+    outline: none;
+  }
+
+  .formSubmit {
+    width: 15.1vw;
+    background-color: #A4DE02;
+    border: 0.1vw solid black;
+    text-align: center;
+  }
+
+  .messageWrap {
+    padding-top: 0.1vw;
   }

@@ -345,6 +345,23 @@ export default class Content extends React.Component {
                       </div>
                     </div>
                   </div>
+                  <br />
+                  <div className="detailTitle">
+                    Message me
+                  </div>
+                  <div className="form">
+                    <div className="nameWrap">
+                      <input className="formName" type="text" placeholder="Name" />
+                    </div>
+                    <div className="messageWrap">
+                      <textarea className="formMessage" placeholder="Message" />
+                    </div>
+                    <div className="submitWrap">
+                      <div className="formSubmit">
+                        SUBMIT
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -838,15 +855,10 @@ export default class Content extends React.Component {
                     EXPERIENCE
                   </div>
                 </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
                 <div className="button">
                   <div className={skillsButton} onClick={() => this.changePage(2)}>
                     CODING SKILLS
-                  </div>
-                </div>
-
-                <div className="button">
-                  <div className="buttonText" onClick={() => this.changePage(3)}>
-                    CONTACT
                   </div>
                 </div>
             </div>
