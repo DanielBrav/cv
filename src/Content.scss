@@ -13,6 +13,7 @@
 }
 
 .blackScreen {
+  //background-color: #1F2833;
   background-color: rgba(0, 0, 0, 0.1);
   height: 100vh;
 }
@@ -29,6 +30,7 @@
 .aboutWords {
   padding-top: 0.8vh;
   font-size: 1vw;
+  //color: #C5C6C7;
 }
 
 .leftSide {
@@ -46,10 +48,11 @@
 }
 
 .hi {
+    color: #45A29E;
     width: 15vw;
     font-size: 1.6vw;
     font-weight: 600;
-    border-bottom: 0.2vw dotted #000000;
+    //border-bottom: 0.2vw dotted #C5C6C7;
 }
 
 
@@ -375,7 +378,7 @@
     font-size: 2vw;
     font-weight: 600;
     //padding-top: 1vh;
-    color: rgb(149, 201, 8);
+    color: #66FCF1;
   }
   
   .slogan {

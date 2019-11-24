@@ -225,6 +225,7 @@ export default class Content extends React.Component {
           <div className="blackScreen">
             <div className="aboutContent">
               <div className="leftSide">
+                <br />
                 <div className="hi">About me</div>
                 <div className="aboutWords">
                     Hi! My name is Daniel Braverman; I am currently
@@ -233,12 +234,12 @@ export default class Content extends React.Component {
                     is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
 
                 </div>
-                <div className="hi" style={{ paddingTop: '8vh' }}>Education</div>
+                <div className="hi" style={{ paddingTop: '13vh' }}>Education</div>
                 <div className="aboutWords">
                     I am currently in my 4<sup>th</sup> year towards Computer Science BSc.
                     in Ben Gurion University of the Negev.
                 </div>
-                <div className="hi" style={{ paddingTop: '8vh' }}>Interests</div>
+                <div className="hi" style={{ paddingTop: '13vh' }}>Interests</div>
                 <div className="aboutWords">
                   <div className="circles">
                     <div className="circle">
@@ -278,6 +279,7 @@ export default class Content extends React.Component {
               </div>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <div className="rightSide">
+                <br />
                 <div className="hi">Contact</div>
                 <div className="aboutWords">
                   <div className="detailTitle">
@@ -346,6 +348,7 @@ export default class Content extends React.Component {
                     </div>
                   </div>
                   <br />
+                  {/*}
                   <div className="detailTitle">
                     Message me
                   </div>
@@ -362,6 +365,7 @@ export default class Content extends React.Component {
                       </div>
                     </div>
                   </div>
+                  */}
                 </div>
               </div>
             </div>
