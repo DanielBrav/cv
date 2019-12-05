@@ -14,26 +14,29 @@
 
 .blackScreen {
   //background-color: #1F2833;
-  background-color: rgba(0, 0, 0, 0.1);
+  //background-color: rgba(0, 0, 0, 0.1);
   height: 100vh;
 }
 
 
 .aboutContent {
+  height: 90vh;
+  background-color: rgba(11, 12, 16, 0.1);
   font-size: 1.6vw;
-  padding-left: 12vw;
-  padding-right: 12vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
   padding-top: 10vh;
   display: flex;
 }
 
 .aboutWords {
-  padding-top: 0.8vh;
+  padding-top: 0.8vw;
   font-size: 1vw;
   //color: #C5C6C7;
 }
 
 .leftSide {
+  padding-left: 1.5vw;
   width: 70%;
 }
 
@@ -61,15 +64,17 @@
 }
 
 .educationContent {
+  background-color: rgba(69, 162, 158, 0.1);
   font-size: 1.6vw;
-  padding-left: 12vw;
-  padding-right: 12vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
   padding-top: 10vh;
   display: flex;
 }
 
 .eduWords {
   color: #000000;
+  padding-left: 1.5vw;
 }
 
 .lineItem {
@@ -78,7 +83,7 @@
 }
 
 .blackScreenPar {
-  background-color: rgba(0, 0, 0, 0.1);
+  //background-color: rgba(0, 0, 0, 0.1);
 }
 
 .eduBgWhite {
@@ -112,11 +117,11 @@
 
 @keyframes wordsBGin {
   from { background-color: transparent;  }//opacity: 0; }
-  to { background-color: #A4DE02; }//margin-top: 5vw; }// opacity: 1; }
+  to { background-color: #438396; }//margin-top: 5vw; }// opacity: 1; }
 }
 
 @keyframes wordsBGout {
-  from { background-color: #A4DE02;  }//opacity: 0; }
+  from { background-color: #438396;  }//opacity: 0; }
   to { background-color: transparent; }//margin-top: 5vw; }// opacity: 1; }
 }
 
@@ -130,7 +135,7 @@
 
 .theWords:hover {
   animation: wordsBGin 0.3s;
-  background-color: #A4DE02;
+  background-color: #438396;
 }
 
 .theLogo {
@@ -340,13 +345,18 @@
       to   { opacity: 1; }//margin-top: 5vw; }// opacity: 1; }
   }
 
+  .logoAndNameWrap {
+    padding-left: 12vw;
+    padding-right: 12vw;
+  }
+
   .logoAndName {
     padding-top: 1vh;
     //display: flex;
-    padding-left: 8vw;
+    padding-left: 1.5vw;
     position: fixed;
     z-index: 100;
-    width: 100vw;
+    width: 74.5vw;
     padding-bottom: 1.2vh;
     animation: fadein 0.15s;
     background-color: #000000;
@@ -389,7 +399,7 @@
 
   .buttons {
     display: flex;
-    padding-left: 22vw;
+    padding-left: 15vw;
   }
   
   .button {
@@ -407,7 +417,7 @@
   }
   
   .buttonText:hover {
-    background-color: #A4DE02;
+    background-color: #66FCF1;
     color: #000000;
     border-bottom: none;
     transition: all 0.15s linear;
@@ -415,7 +425,7 @@
   }
   
   .selected {
-    color: #A4DE02;
+    color: #66FCF1;
     text-align: center;
     font-size: 1vw;
     cursor: pointer;
@@ -480,7 +490,7 @@
   .circle {
     height: 8vw;
     width: 8vw;
-    background-color: #817e7e;
+    background-color: #438396;
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
@@ -494,7 +504,7 @@
   .circleSmaller {
     height: 5vw;
     width: 5vw;
-    background-color: #817e7e;
+    background-color: #438396;
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
@@ -515,7 +525,7 @@
   .circleBigger {
     height: 10vw;
     width: 10vw;
-    background-color: #817e7e;
+    background-color: #438396;
     color: #FFFFFF;
     justify-content: center;
     align-items: center;
@@ -557,7 +567,7 @@
 
 
   .circle:hover {
-    background-color: #A4DE02;
+    //background-color: #A4DE02;
     color: #000000;
     opacity: 1;
     transition: all 0.2s linear;
@@ -568,7 +578,7 @@
   }
 
   .circleBigger:hover {
-    background-color: #A4DE02;
+    //background-color: #A4DE02;
     color: #000000;
     opacity: 1;
     transition: all 0.2s linear;
@@ -579,7 +589,7 @@
   }
 
   .circleSmaller:hover {
-    background-color: #A4DE02;
+    //background-color: #A4DE02;
     color: #000000;
     opacity: 1;
     transition: all 0.2s linear;

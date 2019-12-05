@@ -234,12 +234,12 @@ export default class Content extends React.Component {
                     is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
 
                 </div>
-                <div className="hi" style={{ paddingTop: '13vh' }}>Education</div>
+                <div className="hi" style={{ paddingTop: '5vw' }}>Education</div>
                 <div className="aboutWords">
                     I am currently in my 4<sup>th</sup> year towards Computer Science BSc.
                     in Ben Gurion University of the Negev.
                 </div>
-                <div className="hi" style={{ paddingTop: '13vh' }}>Interests</div>
+                <div className="hi" style={{ paddingTop: '5vw' }}>Interests</div>
                 <div className="aboutWords">
                   <div className="circles">
                     <div className="circle">
@@ -287,7 +287,7 @@ export default class Content extends React.Component {
                   </div>
                   <div className="contactDetailWrapper">
                     <div classNames="contactSVG">
-                      <svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+                      <svg width="2vw" height="2vw" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
                     </div>
                     <div className="contactDetails" style={{ paddingTop: '0.3vw' }}>
                       &nbsp;Tel Aviv, Israel
@@ -295,7 +295,7 @@ export default class Content extends React.Component {
                   </div>
                   <div className="contactDetailWrapper">
                     <div classNames="contactSVG">
-                    <svg width="24" height="24" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
+                    <svg width="2vw" height="2vw" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
                     </div>
                     <div className="contactDetails" style={{ paddingTop: '0.5vw' }}>
                       &nbsp;(+972) 54 30 38 394
@@ -303,7 +303,7 @@ export default class Content extends React.Component {
                   </div>
                   <div className="contactDetailWrapper">
                     <div classNames="contactSVG">
-                    <svg width="24" height="24" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
+                    <svg width="2vw" height="2vw" viewBox="0 0 24 24" style={{ paddingTop: '0.5vh'}}><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
                     </div>
                     <div className="contactDetails" style={{ paddingTop: '0.3vw' }}>
                       &nbsp;daniel.braverm@gmail.com
@@ -549,7 +549,7 @@ export default class Content extends React.Component {
     const educationContent = classNames("educationContent", "blackScreen");
     return (
       <div className={educationParagraph} ref={this.skillsRef}>
-        <div className={educationContent}>
+        <div className={educationContent} style={{ backgroundColor: 'rgba(31,40,51,0.1)'}}>
 
           <div className="leftSide">
             <div className="eduWords">
@@ -831,6 +831,7 @@ export default class Content extends React.Component {
     const skillsButton = classNames(location === 2 ? "selected" : "buttonText");
 
     return (
+      <div className="logoAndNameWrap">
         <div className={logoAndName}>
 
           {/*<div className="logoAndNameContact">
@@ -868,6 +869,7 @@ export default class Content extends React.Component {
             </div>
           </div>
         </div>
+      </div>
     )
   }
 
