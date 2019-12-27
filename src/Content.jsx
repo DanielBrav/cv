@@ -152,12 +152,12 @@ export default class Content extends React.Component {
         <div className="aboutParagraph" ref={this.aboutRef}>
           <div className="blackScreen">
             <div className="aboutContent">
-              <div className="hi">Hello!</div><br />
+              <div className="hi">Hi!</div><br />
               <div className="aboutWords">
-                  My name is Daniel Braverman; I am currently
-                  pursuing a degree of Computer Science in Ben Gurion University of the Negev.
-                  I am very motivated and hard working person, and software development
-                  is my real passion.
+                    My name is Daniel Braverman; I am currently
+                    pursuing a degree of Computer Science in Ben Gurion University of the Negev.
+                    I am very motivated and hard working person that loves to face challanges, and software development
+                    is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
                   <br /><br /><br />
                   Some of my interests
                   <br /><br />
@@ -258,12 +258,13 @@ export default class Content extends React.Component {
                 <img src={bright} className="someLogo" />
               </div>
               <div className="theWords">
-                2018 -  Ashalim solar power plant control room operator (BrightSource): <br />
-                Operation of solar field and power plant.<br />
-                Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
-                Real time problem solving and investigation of malfunctions.<br />
-                Using a variety of computer systems and data bases.<br />
-                Working in an international multicultural environment.
+                <b>2018 -  Ashalim solar power plant control room operator (BrightSource):</b>
+                <br />
+                › Operation of solar field and power plant.<br />
+                › Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
+                › Real time problem solving and investigation of malfunctions.<br />
+                › Using a variety of computer systems and data bases.<br />
+                › Working in an international multicultural environment.
               </div>
             </div>
 
@@ -272,7 +273,7 @@ export default class Content extends React.Component {
                 <img src={nach} className="someLogo" />
               </div>
               <div className="theWords">
-                2016-2019: Private tutor of Mathematics – 5 unit high school students
+                <b>2016-2019: Private tutor of Mathematics – 5 unit high school students</b>
               </div>
             </div>
             <div className="lineItem">
@@ -280,11 +281,11 @@ export default class Content extends React.Component {
                 <img src={gs} className="someLogo" />
               </div>
               <div className="theWords">
-                2014-2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):<br />
-                Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
-                Production floor management and maintenance using computer systems (Citect SCADA software).<br />
-                Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
-                Conduction with senior executives – ongoing reports and presentation of results.<br />
+                <b>2014-2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):</b><br />
+                › Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
+                › Production floor management and maintenance using computer systems (Citect SCADA software).<br />
+                › Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
+                › Conduction with senior executives – ongoing reports and presentation of results.<br />
                 
               </div>
             </div>
@@ -297,7 +298,7 @@ export default class Content extends React.Component {
                 <img src={linux} className="someLogo" />
               </div>
               <div className="theWords">
-                Linux based Terminal – An object-oriented system written in C++. The main goal of this project was to gain implementation experience in C++ while using classes, standard data structures and unique C++ properties such as the “Rule of 5”, Handling memory in C++ and avoiding memory leaks.
+                <b>Linux based Terminal</b> – An object-oriented system written in C++. The main goal of this project was to gain implementation experience in C++ while using classes, standard data structures and unique C++ properties such as the “Rule of 5”, Handling memory in C++ and avoiding memory leaks.
               </div>
             </div>
             <div className="lineItem">
@@ -305,7 +306,7 @@ export default class Content extends React.Component {
                 <img src={bb} className="someLogo" />
               </div>
               <div className="theWords">
-                Online Movie Rental Service – Server and Client performed using a text-based communication, as the Server was implemented in Java and the Client was implemented in C++. The main topics of this project were server-client communication, concurrency and object-oriented programming in Java and C++.    
+                <b>Online Movie Rental Service</b> – Server and Client performed using a text-based communication, as the Server was implemented in Java and the Client was implemented in C++. The main topics of this project were server-client communication, concurrency and object-oriented programming in Java and C++.    
               </div>
             </div>
 
@@ -333,7 +334,7 @@ export default class Content extends React.Component {
               <div className="theLogo">
                 Web development
               </div>
-              <div className="theWords">
+              <div className="theSkills">
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
                     <div className="precentage8" /> 
@@ -413,7 +414,7 @@ export default class Content extends React.Component {
               <div className="theLogo">
                 Programming languages
               </div>
-              <div className="theWords">
+              <div className="theSkills">
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
                     <div className="precentage8" /> 
@@ -506,7 +507,7 @@ export default class Content extends React.Component {
               <div className="theLogo">
                 Databases
               </div>
-              <div className="theWords">
+              <div className="theSkills">
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
                     <div className="precentage8" /> 

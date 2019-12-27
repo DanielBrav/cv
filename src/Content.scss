@@ -19,7 +19,7 @@
 
 
 .aboutContent {
-  font-size: 1.6vw;
+  font-size: 1.5vw;
   padding-left: 12vw;
   padding-right: 12vw;
   padding-top: 15vh;
@@ -35,7 +35,7 @@
 }
 
 .hi {
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: 600;
 }
 
@@ -95,6 +95,13 @@
 }
 
 .theWords {
+  //display: flex;
+  font-size: 1.3vw;
+  padding-left: 1vw;
+  width: 80%;
+}
+
+.theSkills {
   display: flex;
   font-size: 1.3vw;
   padding-left: 1vw;
