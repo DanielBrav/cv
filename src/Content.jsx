@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import styles from './Content.scss';
 import hadera from './haderalogo.jpg';
 import bgu from './bgulogo.png';
+import atrinet from './atrinet.png';
 import bright from './bright.png';
 import nach from './nach.jpg';
 import gs from './gs.jpg';
@@ -24,6 +25,11 @@ import python from './python.jpg';
 import ts from './typescript.png';
 import sql from './sql.jpg';
 
+import aboutBG from './bg.jpg';
+import expBG from './experience.jpeg';
+import eduBG from './study.jpeg';
+import skillsBG from './code.jpeg';
+
 export default class Content extends React.Component {
   constructor(props) {
     super(props);
@@ -35,9 +41,14 @@ export default class Content extends React.Component {
     this.props.setRefs(this.aboutRef, this.educationRef, this.experienceRef, this.contactRef);
     this.state = {
       page: 0,
-      location: 0
+      location: 0,
+      aboutLoaded: undefined,
+      expLoaded: undefined,
+      eduLoaded: undefined,
+      skillsLoaded: undefined
     }
     this.loation = 0;
+
   }
 
   componentDidMount() {
@@ -69,6 +80,35 @@ export default class Content extends React.Component {
       }
 
     }).bind(this);
+
+    const aboutBGLoader = new Image();
+    aboutBGLoader.src = aboutBG;
+    aboutBGLoader.onload = () => {
+      this.setState({ aboutLoaded: aboutBG });
+      console.log("about bg loaded")
+    };
+
+    const expBGLoader = new Image();
+    expBGLoader.src = aboutBG;
+    expBGLoader.onload = () => {
+      this.setState({ expLoaded: expBG });
+      console.log("exp bg loaded")
+    };
+
+    const eduBGLoader = new Image();
+    eduBGLoader.src = eduBG;
+    eduBGLoader.onload = () => {
+      this.setState({ eduLoaded: eduBG });
+      console.log("edu bg loaded")
+    };
+
+    const skillsBGLoader = new Image();
+    skillsBGLoader.src = skillsBG;
+    skillsBGLoader.onload = () => {
+      this.setState({ skillsLoaded: skillsBG });
+      console.log("skills bg loaded")
+    };
+
   }
 
   generateContact() {
@@ -149,13 +189,14 @@ export default class Content extends React.Component {
 
   generateAbout() {
     return (
-        <div className="aboutParagraph" ref={this.aboutRef}>
+        <div className="aboutParagraph" ref={this.aboutRef}
+            style={{ backgroundImage: `url(${aboutBG})` }}>
           <div className="blackScreen">
             <div className="aboutContent">
               <div className="hi">Hi!</div><br />
               <div className="aboutWords">
-                    My name is Daniel Braverman; I am currently
-                    pursuing a degree of Computer Science in Ben Gurion University of the Negev.
+                    My name is Daniel Braverman; I am a Full Stack Developer with a B.Sc in Computer Science 
+                    from Ben Gurion University of the Negev.
                     I am very motivated and hard working person that loves to face challanges, and software development
                     is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
                   <br /><br /><br />
@@ -208,30 +249,32 @@ export default class Content extends React.Component {
     const educationParagraph = classNames("educationParagraph", "eduBg");
     const educationContent = classNames("educationContent", "blackScreenPar");
     return (
-      <div className={educationParagraph} ref={this.educationRef}>
+      <div className={educationParagraph} ref={this.educationRef}
+          style={{ backgroundImage: `url(${eduBG})` }}>
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
               Education
             </div>
             <br />
-            <div className="lineItem">
-              <div className="theLogo">
-                <img src={hadera} className="someLogo" />
-              </div>
-              <div className="theWords">
-                2008-2011: Tichon Hadera high school, majoring Computer Science and Chemistry.
-              </div>
-            </div>
 
             <div className="lineItem">
               <div className="theLogo">
                 <img src={bgu} className="someLogo" />
               </div>
               <div className="theWords">
-                2016-present: Third year Computer Science B.Sc. student, Ben Gurion University.
+                <b>2016-2020: B.Sc, Computer Science, Ben Gurion University of the Negev.</b>
               </div>
             </div>
+            <div className="lineItem">
+              <div className="theLogo">
+                <img src={hadera} className="someLogo" />
+              </div>
+              <div className="theWords">
+                <b>2008-2011: Tichon Hadera high school, majoring Computer Science and Chemistry.</b>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -244,7 +287,8 @@ export default class Content extends React.Component {
     const educationParagraph = classNames("educationParagraph", "expBg");
     const educationContent = classNames("educationContent", "blackScreenPar");
     return (
-      <div className={educationParagraph} ref={this.experienceRef}>
+      <div className={educationParagraph} ref={this.experienceRef}
+            style={{ backgroundImage: `url(${expBG})` }}>
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
@@ -253,12 +297,28 @@ export default class Content extends React.Component {
             <div className="subTitle">
               <i><u>Working experience</u></i>
             </div>
+
+            <div className="lineItem">
+              <div className="theLogo">
+                <img src={atrinet} className="someLogo" />
+              </div>
+              <div className="theWords">
+                <b>2019 - Current: Full Stack Developer (Atrinet):</b>
+                <br />
+                › Took part of developing a Web UI from scratch with Angular and React.<br />
+                › Designed and developed efficient and maintainable software in Java, both client and server side.<br />
+                › Implemented REST API using Spring boot.<br />
+                › Wrote NMS Data Collectors in Python.<br />
+                › Wrote Data Migration software using XQuery.
+              </div>
+            </div>
+
             <div className="lineItem">
               <div className="theLogo">
                 <img src={bright} className="someLogo" />
               </div>
               <div className="theWords">
-                <b>2018 -  Ashalim solar power plant control room operator (BrightSource):</b>
+                <b>2018: Ashalim solar power plant Control Room Operator (BrightSource):</b>
                 <br />
                 › Operation of solar field and power plant.<br />
                 › Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
@@ -273,7 +333,7 @@ export default class Content extends React.Component {
                 <img src={nach} className="someLogo" />
               </div>
               <div className="theWords">
-                <b>2016-2019: Private tutor of Mathematics – 5 unit high school students</b>
+                <b>2016-2019: Private Tutor of Mathematics – 5 unit high school students</b>
               </div>
             </div>
             <div className="lineItem">
@@ -323,7 +383,8 @@ export default class Content extends React.Component {
     const educationParagraph = classNames("educationParagraph", "skillsBg");
     const educationContent = classNames("educationContent", "blackScreenPar");
     return (
-      <div className={educationParagraph} ref={this.skillsRef}>
+      <div className={educationParagraph} ref={this.skillsRef}
+          style={{ backgroundImage: `url(${skillsBG})` }}>
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
@@ -539,8 +600,8 @@ export default class Content extends React.Component {
   changePage(n) {
     switch(n) {
       case 0: window.scrollTo(0, this.aboutRef.current.offsetTop); break;
-      case 1: window.scrollTo(0, this.educationRef.current.offsetTop); break;
-      case 2: window.scrollTo(0, this.experienceRef.current.offsetTop); break;
+      case 1: window.scrollTo(0, this.experienceRef.current.offsetTop); break;
+      case 2: window.scrollTo(0, this.educationRef.current.offsetTop); break;
       case 3: window.scrollTo(0, this.skillsRef.current.offsetTop); break;
     }
   }
@@ -552,8 +613,8 @@ export default class Content extends React.Component {
     const slogan = classNames("slogan", black ? "sloganBlackBorder" : "sloganWhiteBorder");
     const buttons = classNames("buttons");
     const aboutButton = classNames(location === 0 ? "selected" : "buttonText");
-    const eduButton = classNames(location === 1 ? "selected" : "buttonText");
-    const expButton = classNames(location === 2 ? "selected" : "buttonText");
+    const eduButton = classNames(location === 2 ? "selected" : "buttonText");
+    const expButton = classNames(location === 1 ? "selected" : "buttonText");
     const skillsButton = classNames(location === 3 ? "selected" : "buttonText");
 
     return (
@@ -575,13 +636,13 @@ export default class Content extends React.Component {
                   </div>
                 </div>
                 <div className="button">
-                  <div className={eduButton} onClick={() => this.changePage(1)}>
-                    EDUCATION
+                  <div className={expButton} onClick={() => this.changePage(1)}>
+                    EXPERIENCE
                   </div>
                 </div>
                 <div className="button">
-                  <div className={expButton} onClick={() => this.changePage(2)}>
-                    EXPERIENCE
+                  <div className={eduButton} onClick={() => this.changePage(2)}>
+                    EDUCATION
                   </div>
                 </div>
                 <div className="button">
@@ -589,7 +650,6 @@ export default class Content extends React.Component {
                     CODING SKILLS
                   </div>
                 </div>
-
                 <div className="button">
                   <div className="buttonText" onClick={() => this.changePage(4)}>
                     CONTACT
@@ -609,22 +669,54 @@ export default class Content extends React.Component {
     }
   }
 
+  generateLoading() {
+    return(
+      <div class="lds-circle">
+          <div class="spinnerInner">
+              <div class="spinnerText">
+                <div>
+                  LOADING
+                </div>
+                <div style={{ fontSize: '1vw'}}>
+                  Please wait
+                </div>
+              </div>
+          </div>
+      </div>
+    )
+  }
+
   render() {
     const { location } = this.state; 
 
+    const { aboutLoaded, expLoaded, eduLoaded, skillsLoaded } = this.state;
+    let allLoaded = true;
+    if(aboutLoaded === undefined || expLoaded === undefined 
+      || eduLoaded === undefined || skillsLoaded === undefined)
+    {
+      allLoaded = false;
+    }
     return (
-      <div className="contentWrapper">
+      <div>
+        <div className="loading" style={{ position: 'fixed', zIndex: allLoaded ? '0': '100000',
+                                          visibility: allLoaded ? 'hidden' : 'visible' }}>
+          <div className="loadingInner">
+            {this.generateLoading()}
+          </div>
+        </div>
+        <div className="contentWrapper"
+               style={{ opacity: allLoaded ? '1' : '0.3' }}>
 
+          {this.whichHeader(location)}
 
-        {this.whichHeader(location)}
+          {this.generateAbout()}
+        
+          {this.generateExperience()}
 
-        {this.generateAbout()}
+          {this.generateEducation()}
 
-        {this.generateEducation()}
-
-        {this.generateExperience()}
-
-        {this.generateSkills()}
+          {this.generateSkills()}
+        </div>
       </div>
     )
   }
