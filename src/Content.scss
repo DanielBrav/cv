@@ -301,7 +301,7 @@
     //display: flex;
     padding-left: 8vw;
     position: fixed;
-    z-index: 100;
+    z-index: 10000;
     width: 100vw;
     padding-bottom: 4vh;
     animation: fadein 0.15s;
@@ -331,9 +331,16 @@
   .name {
     font-size: 2vw;
     font-weight: 600;
+    width: 36vw;
     //padding-top: 1vh;
+    //background-image: url('');
   }
   
+  .logtry {
+    width: 100%;
+    height: auto;
+  }
+
   .slogan {
     padding-top: 0.4vw;
     font-size: 1.6vw;
@@ -349,7 +356,7 @@
 
   .buttons {
     display: flex;
-    padding-left: 10vw;
+    padding-left: 8.5vw;
   }
   
   .button {
@@ -524,4 +531,28 @@
     font-size: 2vw;
     color: #fff;
     font-weight: 600;
+  }
+
+  .contactWays {
+    display: flex;
+  }
+
+  .lineItemContact {
+    display: flex;
+    padding-top: 3vh;
+    width: 40%;
+    background: rgba(172, 172, 172, 0.3);
+    margin-left: 0vw;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.15s linear;
+  }
+  
+  .lineItemContact:hover {
+    background: rgba(172, 172, 172, 0.6);
+    transition: all 0.15s linear;
+  }
+  
+  .subTitle {
+    display: flex;
   }
