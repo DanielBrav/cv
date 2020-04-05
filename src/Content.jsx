@@ -24,11 +24,19 @@ import java from './java.png';
 import python from './python.jpg';
 import ts from './typescript.png';
 import sql from './sql.jpg';
+import xquery from './xquery.jpg';
 
 import aboutBG from './bg.jpg';
 import expBG from './experience.jpeg';
 import eduBG from './study.jpeg';
 import skillsBG from './code.jpeg';
+import contactBG from './contact.jpg';
+
+import logotry from './log_try.png';
+
+import facebook from './facebook.png';
+import linkedin from './linkedin.png';
+import github from './github.png';
 
 export default class Content extends React.Component {
   constructor(props) {
@@ -45,7 +53,8 @@ export default class Content extends React.Component {
       aboutLoaded: undefined,
       expLoaded: undefined,
       eduLoaded: undefined,
-      skillsLoaded: undefined
+      skillsLoaded: undefined,
+      contactLoaded: undefined
     }
     this.loation = 0;
 
@@ -77,6 +86,10 @@ export default class Content extends React.Component {
         if(location !== 3) {
           this.setState({ location: 3 });
         }
+      } else if(offset >= 4*height+120 && offset < 5*height+120) {
+        if(location !== 4) {
+          this.setState({ location: 4 });
+        }
       }
 
     }).bind(this);
@@ -107,6 +120,13 @@ export default class Content extends React.Component {
     skillsBGLoader.onload = () => {
       this.setState({ skillsLoaded: skillsBG });
       console.log("skills bg loaded")
+    };
+
+    const contactBGLoader = new Image();
+    contactBGLoader.src = contactBG;
+    contactBGLoader.onload = () => {
+      this.setState({ contactLoaded: contactBG });
+      console.log("contact bg loaded")
     };
 
   }
@@ -195,7 +215,7 @@ export default class Content extends React.Component {
             <div className="aboutContent">
               <div className="hi">Hi!</div><br />
               <div className="aboutWords">
-                    My name is Daniel Braverman; I am a Full Stack Developer with a B.Sc in Computer Science 
+                    My name is Daniel Braverman, I am 26 years old from Ramat Gan, Israel; I am a Full Stack Engineer with a B.Sc in Computer Science 
                     from Ben Gurion University of the Negev.
                     I am very motivated and hard working person that loves to face challanges, and software development
                     is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
@@ -263,7 +283,7 @@ export default class Content extends React.Component {
                 <img src={bgu} className="someLogo" />
               </div>
               <div className="theWords">
-                <b>2016-2020: B.Sc, Computer Science, Ben Gurion University of the Negev.</b>
+                <b>2016 - 2020: B.Sc, Computer Science, Ben Gurion University of the Negev.</b>
               </div>
             </div>
             <div className="lineItem">
@@ -271,7 +291,7 @@ export default class Content extends React.Component {
                 <img src={hadera} className="someLogo" />
               </div>
               <div className="theWords">
-                <b>2008-2011: Tichon Hadera high school, majoring Computer Science and Chemistry.</b>
+                <b>2008 - 2011: Tichon Hadera high school, majoring Computer Science and Chemistry.</b>
               </div>
             </div>
 
@@ -303,7 +323,7 @@ export default class Content extends React.Component {
                 <img src={atrinet} className="someLogo" />
               </div>
               <div className="theWords">
-                <b>2019 - Current: Full Stack Developer (Atrinet):</b>
+                <b>2019 - Current: Full Stack Engineer (Atrinet):</b>
                 <br />
                 › Took part of developing a Web UI from scratch with Angular and React.<br />
                 › Designed and developed efficient and maintainable software in Java, both client and server side.<br />
@@ -333,7 +353,7 @@ export default class Content extends React.Component {
                 <img src={nach} className="someLogo" />
               </div>
               <div className="theWords">
-                <b>2016-2019: Private Tutor of Mathematics – 5 unit high school students</b>
+                <b>2016 - 2019: Private Tutor of Mathematics – 5 unit high school students</b>
               </div>
             </div>
             <div className="lineItem">
@@ -341,7 +361,7 @@ export default class Content extends React.Component {
                 <img src={gs} className="someLogo" />
               </div>
               <div className="theWords">
-                <b>2014-2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):</b><br />
+                <b>2014 - 2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):</b><br />
                 › Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
                 › Production floor management and maintenance using computer systems (Citect SCADA software).<br />
                 › Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
@@ -351,7 +371,8 @@ export default class Content extends React.Component {
             </div>
             <br />
             <div className="subTitle">
-              <i><u>University projects</u></i>
+              <i><u>University projects (More projects can be seen in GitHub)</u></i>
+              
             </div>
             <div className="lineItem">
               <div className="theLogo">
@@ -580,6 +601,19 @@ export default class Content extends React.Component {
                     </div>
                   </div>
                 </div>
+
+                <div className="someLogoSmall">
+                  <div className="someLogoSmallWrap">
+                    <div className="precentage8" /> 
+                    <div className="smallLogoTitle">
+                      XQuery
+                    </div>
+                    <div className="imageDiv">
+                      <img src={xquery} className="imageSmall" alt="XQuery" />
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
@@ -597,12 +631,77 @@ export default class Content extends React.Component {
     }
   }
 
+  generateContactPage() {
+    return (
+        <div className="aboutParagraph" ref={this.contactRef}
+            style={{ backgroundImage: `url(${contactBG})` }}>
+          <div className="blackScreen">
+            <div className="aboutContent">
+              <div className="hi">You can contact me the following ways</div><br />
+              <div className="contactWays">
+                <div className="lineItemContact" onClick={() => {
+                                                            window.open("https://www.facebook.com/daniel.braverman.3", "_blank");}}>
+                  &nbsp;&nbsp;&nbsp;
+                  <div className="theLogo">
+                    <img src={facebook} className="someLogo" />
+                  </div>
+                  <div className="theWords">
+                    <b>Facebook</b><br />
+                  </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                <div className="lineItemContact" onClick={() => {
+                                                            window.open("https://www.linkedin.com/in/daniel-braverman-29601815a/", "_blank");}}>
+                  &nbsp;&nbsp;&nbsp;
+                  <div className="theLogo">
+                    <img src={linkedin} className="someLogo" />
+                  </div>
+                  <div className="theWords">
+                    <b>LinkedIn</b><br />
+                    <br />&nbsp;<br />&nbsp;
+                  </div>
+                </div>
+              </div>
+              <br />
+              <div className="contactWays">
+                
+                  <div className="lineItemContact" onClick={() => {
+                                                            window.open("https://github.com/danielbrav", "_blank");}}>
+                    &nbsp;&nbsp;&nbsp;
+                    <div className="theLogo">
+                      <img src={github} className="someLogo" />
+                    </div>
+                    <div className="theWords">
+                      <b>GitHub</b><br />
+                      You can see personal projects and university projects
+                      <br />&nbsp;&nbsp;&nbsp;<br />
+                    </div>
+                  </div>
+                
+                &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;
+                
+              </div>
+              <br />
+              <b>Email address</b>: daniel.braverm@gmail.com <br />
+              <b>Phone number</b>: (+972) 54 3038394
+              
+            </div>
+        </div>
+      </div>
+    )
+  }
+
   changePage(n) {
     switch(n) {
       case 0: window.scrollTo(0, this.aboutRef.current.offsetTop); break;
       case 1: window.scrollTo(0, this.experienceRef.current.offsetTop); break;
       case 2: window.scrollTo(0, this.educationRef.current.offsetTop); break;
       case 3: window.scrollTo(0, this.skillsRef.current.offsetTop); break;
+      case 4: window.scrollTo(0, this.contactRef.current.offsetTop); break;
     }
   }
 
@@ -616,6 +715,7 @@ export default class Content extends React.Component {
     const eduButton = classNames(location === 2 ? "selected" : "buttonText");
     const expButton = classNames(location === 1 ? "selected" : "buttonText");
     const skillsButton = classNames(location === 3 ? "selected" : "buttonText");
+    const contactButton = classNames(location === 4 ? "selected" : "buttonText");
 
     return (
         <div className={logoAndName}>
@@ -626,8 +726,10 @@ export default class Content extends React.Component {
 
           <div className="headlineAndButtons">
             <div className="headline">
-                <div className="name">DANIEL BRAVERMAN,&nbsp;</div>
-                <div className={slogan}>Software developer.</div>
+                <div className="name">
+                  <img src={logotry} className="logtry" />
+                </div>
+                <div className={slogan}></div>
             </div>
             <div className={buttons}>
                 <div className="button">
@@ -651,7 +753,7 @@ export default class Content extends React.Component {
                   </div>
                 </div>
                 <div className="button">
-                  <div className="buttonText" onClick={() => this.changePage(4)}>
+                  <div className={contactButton} onClick={() => this.changePage(4)}>
                     CONTACT
                   </div>
                 </div>
@@ -716,6 +818,8 @@ export default class Content extends React.Component {
           {this.generateEducation()}
 
           {this.generateSkills()}
+
+          {this.generateContactPage()}
         </div>
       </div>
     )
