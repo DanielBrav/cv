@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.f457293d.chunk.css",
-    "main.js": "/cv/static/js/main.975ecfe2.chunk.js",
-    "main.js.map": "/cv/static/js/main.975ecfe2.chunk.js.map",
+    "main.css": "/cv/static/css/main.13949a58.chunk.css",
+    "main.js": "/cv/static/js/main.bda591bf.chunk.js",
+    "main.js.map": "/cv/static/js/main.bda591bf.chunk.js.map",
     "runtime~main.js": "/cv/static/js/runtime~main.6f651ed7.js",
     "runtime~main.js.map": "/cv/static/js/runtime~main.6f651ed7.js.map",
-    "static/js/2.bdeca0d9.chunk.js": "/cv/static/js/2.bdeca0d9.chunk.js",
-    "static/js/2.bdeca0d9.chunk.js.map": "/cv/static/js/2.bdeca0d9.chunk.js.map",
+    "static/js/2.d717036e.chunk.js": "/cv/static/js/2.d717036e.chunk.js",
+    "static/js/2.d717036e.chunk.js.map": "/cv/static/js/2.d717036e.chunk.js.map",
     "index.html": "/cv/index.html",
-    "precache-manifest.b4eefd336d60ea8c9e1a5c97c72ed455.js": "/cv/precache-manifest.b4eefd336d60ea8c9e1a5c97c72ed455.js",
+    "precache-manifest.96cc5c255f8f17c3ddf2237b39f224f6.js": "/cv/precache-manifest.96cc5c255f8f17c3ddf2237b39f224f6.js",
     "service-worker.js": "/cv/service-worker.js",
-    "static/css/main.f457293d.chunk.css.map": "/cv/static/css/main.f457293d.chunk.css.map",
+    "static/css/main.13949a58.chunk.css.map": "/cv/static/css/main.13949a58.chunk.css.map",
     "static/media/atrinet.png": "/cv/static/media/atrinet.64e09fa7.png",
     "static/media/bg.jpg": "/cv/static/media/bg.78aa8dee.jpg",
     "static/media/bgulogo.png": "/cv/static/media/bgulogo.668bdcdb.png",
     "static/media/Content.scss": "/cv/static/media/study.a5b7d642.jpeg",
     "static/media/contact.jpg": "/cv/static/media/contact.4d1658ac.jpg",
     "static/media/experience.jpeg": "/cv/static/media/experience.e085d64d.jpeg",
+    "static/media/github.png": "/cv/static/media/github.7e80f5c0.png",
     "static/media/haderalogo.jpg": "/cv/static/media/haderalogo.b6fcbe4c.jpg",
+    "static/media/linkedin.png": "/cv/static/media/linkedin.15fd5adb.png",
     "static/media/logo.jpg": "/cv/static/media/logo.26309393.jpg"
   }
 }
