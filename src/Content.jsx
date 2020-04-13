@@ -135,14 +135,25 @@ export default class Content extends React.Component {
     return (
       <div>
           <div className="contactInfo">
+            {/*}
             <div className="phoneNumber">
               <div className="phoneSVG">
                 <svg className="phone" fill="#003B46" viewBox="0 0 24 24"><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg>
               </div>
-              {/*<div className="theNumber">
+              <div className="theNumber">
                 0543038394
-              </div>*/}
+              </div>
             </div>
+          */}
+            <div className="phoneNumber">
+              <div className="phoneSVG">
+                <svg className="phone" fill="#003B46" viewBox="0 0 24 24"><path d="M16 11h5l-9 10-9-10h5v-11h8v11zm3 8v3h-14v-3h-2v5h18v-5h-2z"/></svg>
+              </div>
+              <div className="theNumber">
+                &nbsp;Download CV
+              </div>
+            </div>
+           {/*}
             <div className="phoneNumber">
               <div className="phoneSVG">
                 <svg className="email" fill="#003B46" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
@@ -158,6 +169,7 @@ export default class Content extends React.Component {
                 <svg className="facebook" fill="#003B46" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
               </div>
             </div>
+            */}
         </div>
       </div>
     )
@@ -213,13 +225,19 @@ export default class Content extends React.Component {
             style={{ backgroundImage: `url(${aboutBG})` }}>
           <div className="blackScreen">
             <div className="aboutContent">
-              <div className="hi">Hi!</div><br />
-              <div className="aboutWords">
-                    My name is Daniel Braverman, I am 26 years old from Ramat Gan, Israel; I am a Full Stack Engineer with a B.Sc in Computer Science 
-                    from Ben Gurion University of the Negev.
-                    I am very motivated and hard working person that loves to face challanges, and software development
-                    is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
-                  <br /><br /><br />
+              <div className="pre">
+                <div className="speech-bubble">
+                  <div className="hi">Hi!</div><br />
+                  <div className="aboutWords">
+                        My name is Daniel Braverman, I am 26 years old from Ramat Gan, Israel; I am a Full Stack Engineer with a B.Sc in Computer Science 
+                        from Ben Gurion University of the Negev.
+                        I am very motivated and hard working person that loves to face challanges, and software development
+                        is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
+                  </div>
+                </div>
+              </div>
+              <div className="interests">
+                <div className="interests-bubble">
                   Some of my interests
                   <br /><br />
                   <div className="circles">
@@ -256,6 +274,7 @@ export default class Content extends React.Component {
                       </div>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
         </div>
@@ -314,37 +333,43 @@ export default class Content extends React.Component {
             <div className="hi">
               Experience
             </div>
-            <div className="subTitle">
+            {/*<div className="subTitle">
               <i><u>Working experience</u></i>
+    </div>*/}
+            
+            
+            <div className="lineItem" style={{ paddingTop: '5vh' }}>
+              <div className="speech-bubble" style={{ display: 'flex' }}>
+                <div className="theLogo">
+                  <img src={atrinet} className="someLogo" />
+                </div>
+                <div className="theWords">
+                  <b>2019 - Current: Full Stack Engineer (Atrinet):</b>
+                  <br />
+                  › Took part of developing a Web UI from scratch with Angular and React.<br />
+                  › Designed and developed efficient and maintainable software in Java, both client and server side.<br />
+                  › Implemented REST API using Spring boot.<br />
+                  › Wrote NMS Data Collectors in Python.<br />
+                  › Wrote Data Migration software using XQuery.
+                </div>
+              </div>
             </div>
 
-            <div className="lineItem">
-              <div className="theLogo">
-                <img src={atrinet} className="someLogo" />
-              </div>
-              <div className="theWords">
-                <b>2019 - Current: Full Stack Engineer (Atrinet):</b>
-                <br />
-                › Took part of developing a Web UI from scratch with Angular and React.<br />
-                › Designed and developed efficient and maintainable software in Java, both client and server side.<br />
-                › Implemented REST API using Spring boot.<br />
-                › Wrote NMS Data Collectors in Python.<br />
-                › Wrote Data Migration software using XQuery.
-              </div>
-            </div>
-
-            <div className="lineItem">
-              <div className="theLogo">
-                <img src={bright} className="someLogo" />
-              </div>
-              <div className="theWords">
-                <b>2018: Ashalim solar power plant Control Room Operator (BrightSource):</b>
-                <br />
-                › Operation of solar field and power plant.<br />
-                › Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
-                › Real time problem solving and investigation of malfunctions.<br />
-                › Using a variety of computer systems and data bases.<br />
-                › Working in an international multicultural environment.
+            
+            <div className="lineItem" style={{ paddingLeft: '35vw' }}>
+              <div className="interests-bubble" style={{ display: 'flex' }}>
+                <div className="theLogo">
+                  <img src={bright} className="someLogo" />
+                </div>
+                <div className="theWords">
+                  <b>2018: Ashalim solar power plant Control Room Operator (BrightSource):</b>
+                  <br />
+                  › Operation of solar field and power plant.<br />
+                  › Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
+                  › Real time problem solving and investigation of malfunctions.<br />
+                  › Using a variety of computer systems and data bases.<br />
+                  › Working in an international multicultural environment.
+                </div>
               </div>
             </div>
 
@@ -547,7 +572,7 @@ export default class Content extends React.Component {
 
                 <div className="someLogoSmall">
                   <div className="someLogoSmallWrap">
-                    <div className="precentage4" /> 
+                    <div className="precentage7" /> 
                     <div className="smallLogoTitle">
                       Python
                     </div>
@@ -647,6 +672,7 @@ export default class Content extends React.Component {
                   </div>
                   <div className="theWords">
                     <b>Facebook</b><br />
+                    <br />&nbsp;&nbsp;<br />
                   </div>
                 </div>
                 &nbsp;&nbsp;&nbsp;
@@ -661,6 +687,7 @@ export default class Content extends React.Component {
                   <div className="theWords">
                     <b>LinkedIn</b><br />
                     <br />&nbsp;<br />&nbsp;
+                    <br />&nbsp;&nbsp;<br />
                   </div>
                 </div>
               </div>
@@ -677,6 +704,7 @@ export default class Content extends React.Component {
                       <b>GitHub</b><br />
                       You can see personal projects and university projects
                       <br />&nbsp;&nbsp;&nbsp;<br />
+                      <br />&nbsp;&nbsp;<br />
                     </div>
                   </div>
                 
@@ -697,11 +725,11 @@ export default class Content extends React.Component {
 
   changePage(n) {
     switch(n) {
-      case 0: window.scrollTo(0, this.aboutRef.current.offsetTop); break;
-      case 1: window.scrollTo(0, this.experienceRef.current.offsetTop); break;
-      case 2: window.scrollTo(0, this.educationRef.current.offsetTop); break;
-      case 3: window.scrollTo(0, this.skillsRef.current.offsetTop); break;
-      case 4: window.scrollTo(0, this.contactRef.current.offsetTop); break;
+      case 0: window.scrollTo(0, this.aboutRef.current.offsetTop-5); break;
+      case 1: window.scrollTo(0, this.experienceRef.current.offsetTop-5); break;
+      case 2: window.scrollTo(0, this.educationRef.current.offsetTop-5); break;
+      case 3: window.scrollTo(0, this.skillsRef.current.offsetTop-5); break;
+      case 4: window.scrollTo(0, this.contactRef.current.offsetTop-5); break;
     }
   }
 
@@ -765,7 +793,7 @@ export default class Content extends React.Component {
 
   whichHeader(location) {
     switch(location) {
-      case 0: return this.generateHeader(false);
+      case 0: return this.generateHeader(true);
       case -1: return "";
       default: return this.generateHeader(true);
     }
