@@ -226,7 +226,7 @@ export default class Content extends React.Component {
           <div className="blackScreen">
             <div className="aboutContent">
               <div className="pre">
-                <div className="speech-bubble">
+                <div className="speech-bubble" style={{ color: '#EDF5E1' }}>
                   <div className="hi">Hi!</div><br />
                   <div className="aboutWords">
                         My name is Daniel Braverman, I am 26 years old from Ramat Gan, Israel; I am a Full Stack Engineer with a B.Sc in Computer Science 
@@ -237,8 +237,8 @@ export default class Content extends React.Component {
                 </div>
               </div>
               <div className="interests">
-                <div className="interests-bubble">
-                  Some of my interests
+                <div className="interests-bubble" style={{ color: '#EDF5E1' }}>
+                  <b>Some of my interests</b>
                   <br /><br />
                   <div className="circles">
                     <div className="circle">
@@ -293,24 +293,28 @@ export default class Content extends React.Component {
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
-              Education
+              EDUCATION
             </div>
             <br />
 
             <div className="lineItem">
-              <div className="theLogo">
-                <img src={bgu} className="someLogo" />
-              </div>
-              <div className="theWords">
-                <b>2016 - 2020: B.Sc, Computer Science, Ben Gurion University of the Negev.</b>
+              <div className="speech-bubble brightB" style={{ display: 'flex' }}>
+                <div className="theLogo">
+                  <img src={bgu} className="someLogo" />
+                </div>
+                <div className="theWords">
+                  <b>2016 - 2020: B.Sc, Computer Science, Ben Gurion University of the Negev.</b>
+                </div>
               </div>
             </div>
-            <div className="lineItem">
-              <div className="theLogo">
-                <img src={hadera} className="someLogo" />
-              </div>
-              <div className="theWords">
-                <b>2008 - 2011: Tichon Hadera high school, majoring Computer Science and Chemistry.</b>
+            <div className="lineItem" style={{ paddingLeft: '35vw' }}>
+              <div className="interests-bubble brightH" style={{ display: 'flex' }}>
+                <div className="theLogo">
+                  <img src={hadera} className="someLogo" />
+                </div>
+                <div className="theWords">
+                  <b>2008 - 2011: Tichon Hadera high school, majoring Computer Science and Chemistry.</b>
+                </div>
               </div>
             </div>
 
@@ -331,7 +335,7 @@ export default class Content extends React.Component {
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
-              Experience
+              EXPERIENCE
             </div>
             {/*<div className="subTitle">
               <i><u>Working experience</u></i>
@@ -339,7 +343,7 @@ export default class Content extends React.Component {
             
             
             <div className="lineItem" style={{ paddingTop: '5vh' }}>
-              <div className="speech-bubble" style={{ display: 'flex' }}>
+              <div className="speech-bubble brightB" style={{ display: 'flex' }}>
                 <div className="theLogo">
                   <img src={atrinet} className="someLogo" />
                 </div>
@@ -357,7 +361,7 @@ export default class Content extends React.Component {
 
             
             <div className="lineItem" style={{ paddingLeft: '35vw' }}>
-              <div className="interests-bubble" style={{ display: 'flex' }}>
+              <div className="interests-bubble brightG" style={{ display: 'flex' }}>
                 <div className="theLogo">
                   <img src={bright} className="someLogo" />
                 </div>
@@ -374,24 +378,29 @@ export default class Content extends React.Component {
             </div>
 
             <div className="lineItem">
-              <div className="theLogo">
-                <img src={nach} className="someLogo" />
-              </div>
-              <div className="theWords">
-                <b>2016 - 2019: Private Tutor of Mathematics – 5 unit high school students</b>
+              <div className="speech-bubble brightB" style={{ display: 'flex' }}>
+                <div className="theLogo">
+                  <img src={nach} className="someLogo" />
+                </div>
+                <div className="theWords">
+                  <b>2016 - 2019: Private Tutor of Mathematics – 5 unit high school students</b>
+                </div>
               </div>
             </div>
-            <div className="lineItem">
-              <div className="theLogo">
-                <img src={gs} className="someLogo" />
-              </div>
-              <div className="theWords">
-                <b>2014 - 2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):</b><br />
-                › Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
-                › Production floor management and maintenance using computer systems (Citect SCADA software).<br />
-                › Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
-                › Conduction with senior executives – ongoing reports and presentation of results.<br />
-                
+
+            <div className="lineItem" style={{ paddingLeft: '33vw' }}>
+              <div className="interests-bubble brightG" style={{ display: 'flex' }}>
+                <div className="theLogo">
+                  <img src={gs} className="someLogo" />
+                </div>
+                <div className="theWords">
+                  <b>2014 - 2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):</b><br />
+                  › Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
+                  › Production floor management and maintenance using computer systems (Citect SCADA software).<br />
+                  › Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
+                  › Conduction with senior executives – ongoing reports and presentation of results.<br />
+                  
+                </div>
               </div>
             </div>
             <br />
@@ -399,20 +408,24 @@ export default class Content extends React.Component {
               <i><u>University projects (More projects can be seen in GitHub)</u></i>
               
             </div>
-            <div className="lineItem">
-              <div className="theLogo">
-                <img src={linux} className="someLogo" />
-              </div>
-              <div className="theWords">
-                <b>Linux based Terminal</b> – An object-oriented system written in C++. The main goal of this project was to gain implementation experience in C++ while using classes, standard data structures and unique C++ properties such as the “Rule of 5”, Handling memory in C++ and avoiding memory leaks.
+            <div className="lineItem" style={{ paddingTop: '5vh', paddingRight: '20vw' }}>
+              <div className="speech-bubble brightB" style={{ display: 'flex' }}>
+                <div className="theLogo">
+                  <img src={linux} className="someLogo" />
+                </div>
+                <div className="theWords">
+                  <b>Linux based Terminal</b> – An object-oriented system written in C++. The main goal of this project was to gain implementation experience in C++ while using classes, standard data structures and unique C++ properties such as the “Rule of 5”, Handling memory in C++ and avoiding memory leaks.
+                </div>
               </div>
             </div>
-            <div className="lineItem">
-              <div className="theLogo">
-                <img src={bb} className="someLogo" />
-              </div>
-              <div className="theWords">
-                <b>Online Movie Rental Service</b> – Server and Client performed using a text-based communication, as the Server was implemented in Java and the Client was implemented in C++. The main topics of this project were server-client communication, concurrency and object-oriented programming in Java and C++.    
+            <div className="lineItem" style={{ paddingLeft: '30vw', paddingTop: '6vh' }}>
+              <div className="interests-bubble brightG" style={{ display: 'flex' }}>
+                <div className="theLogo">
+                  <img src={bb} className="someLogo" />
+                </div>
+                <div className="theWords">
+                  <b>Online Movie Rental Service</b> – Server and Client performed using a text-based communication, as the Server was implemented in Java and the Client was implemented in C++. The main topics of this project were server-client communication, concurrency and object-oriented programming in Java and C++.    
+                </div>
               </div>
             </div>
 
@@ -434,7 +447,7 @@ export default class Content extends React.Component {
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
-              Coding skills
+              CODING SKILLS
             </div>
             <br />
             <div className="lineItem">

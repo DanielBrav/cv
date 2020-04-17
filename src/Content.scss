@@ -12,13 +12,13 @@
 }
 
 .blackScreen {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
 }
 
 
 .aboutContent {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   padding-left: 9vw;
   padding-right: 9vw;
   padding-top: 20vh;
@@ -36,6 +36,7 @@
 .hi {
     font-size: 2vw;
     font-weight: 600;
+    color: #EDF5E1;
 }
 
 .educationParagraph {
@@ -51,7 +52,7 @@
 
 .eduWords {
   padding-top: 3vh;
-  color: #FFFFFF;
+  color: #EDF5E1;
   padding-top: 15vh;
 }
 
@@ -61,7 +62,7 @@
 }
 
 .blackScreenPar {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .eduBgWhite {
@@ -98,6 +99,7 @@
   font-size: 1vw;
   padding-left: 1vw;
   width: 80%;
+  z-index: 10;
 }
 
 .theSkills {
@@ -306,6 +308,7 @@
     width: 100vw;
     padding-bottom: 1.5vh;
     animation: fadein 0.15s;
+    color: #05386B;
   }
 
   .hidden {
@@ -321,7 +324,7 @@
   }
 
   .black {
-    color: #000000;
+    color: #05386B;
     background-color: #FFFFFF;
   }
 
@@ -371,24 +374,24 @@
     cursor: pointer;
     transition: all 0.15s linear;
    // border-bottom: 0.2vw solid #AEBD38;
-    border-top: 0vw solid #A4DE02;
+    border-top: 0vw solid #379683;
 
   }
   
   .buttonText:hover {
-    color: #A4DE02;
+    color: #379683;
     border-bottom: none;
-    border-top: 0.2vw solid #A4DE02;
+    border-top: 0.2vw solid #379683;
     transition: all 0.15s linear;
   }
   
   .selected {
-    color: #A4DE02;
+    color: #379683;
     text-align: center;
     font-size: 0.8vw;
     cursor: pointer;
     border-bottom: none;
-    border-top: 0.2vw solid #A4DE02;
+    border-top: 0.2vw solid #379683;
   }
   
   .phoneNumber {
@@ -560,9 +563,9 @@
   }
 
   .speech-bubble {
-    color: black;
+    color: #05386B;
     position: relative;
-    background: yellowgreen;
+    background: #379683;
     border-radius: .4vw;
     padding: 1vw;
   }
@@ -575,7 +578,7 @@
     width: 0;
     height: 0;
     border: 4vw solid transparent;
-    border-bottom-color: yellowgreen;
+    border-bottom-color: #379683;
     border-top: 0;
     border-left: 0;
     margin-left: -2vw;
@@ -583,9 +586,9 @@
   }
 
   .interests-bubble {
-    color: black;
+    color: #05386B;
     position: relative;
-    background: yellowgreen;
+    background: #379683;
     border-radius: .4vw;
     padding: 1vw;
   }
@@ -598,7 +601,7 @@
     width: 0;
     height: 0;
     border: 4vw solid transparent;
-    border-bottom-color: yellowgreen;
+    border-bottom-color: #379683;
     border-top: 0;
     border-right: 0;
     margin-left: -2vw;
@@ -613,3 +616,28 @@
   .pre {
     padding-right: 10vw;
   }
+
+  .brightB {
+    background-color: #5CDB95;
+  }
+
+  .brightB:after {
+    border-bottom-color: #5CDB95;
+  }
+  
+  .brightG {
+    background-color: #8EE4AF;
+  }
+
+  .brightG:after {
+    border-bottom-color: #8EE4AF;
+  }
+
+  .brightH {
+    background-color: #8EE4AF;
+  }
+
+  .brightH:after {
+    border-bottom-color: #8EE4AF;
+  }
+  
