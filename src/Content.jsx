@@ -226,7 +226,7 @@ export default class Content extends React.Component {
           <div className="blackScreen">
             <div className="aboutContent">
               <div className="pre">
-                <div className="speech-bubble brightB" style={{ color: '#EDF5E1' }}>
+                <div className="speech-bubble brightB" style={{ color: '#05386b' }}>
                   <div className="hi">Hi!</div><br />
                   <div className="aboutWords">
                         My name is Daniel Braverman, I am 26 years old from Ramat Gan, Israel; I am a Full Stack Engineer with a B.Sc in Computer Science 
@@ -237,7 +237,7 @@ export default class Content extends React.Component {
                 </div>
               </div>
               <div className="interests">
-                <div className="interests-bubble brightG" style={{ color: '#EDF5E1' }}>
+                <div className="interests-bubble brightG" style={{ color: '#05386b' }}>
                   <b>Some of my interests</b>
                   <br /><br />
                   <div className="circles">
