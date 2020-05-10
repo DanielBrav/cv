@@ -145,14 +145,7 @@ export default class Content extends React.Component {
               </div>
             </div>
           */}
-            <div className="phoneNumber">
-              <div className="phoneSVG">
-                <svg className="phone" fill="#003B46" viewBox="0 0 24 24"><path d="M16 11h5l-9 10-9-10h5v-11h8v11zm3 8v3h-14v-3h-2v5h18v-5h-2z"/></svg>
-              </div>
-              <div className="theNumber">
-                &nbsp;Download CV
-              </div>
-            </div>
+
            {/*}
             <div className="phoneNumber">
               <div className="phoneSVG">
@@ -221,23 +214,25 @@ export default class Content extends React.Component {
 
   generateAbout() {
     return (
-        <div className="aboutParagraph" ref={this.aboutRef}
-            style={{ backgroundImage: `url(${aboutBG})` }}>
-          <div className="blackScreen">
+        <div className="aboutParagraph" ref={this.aboutRef}>
+          <div>
             <div className="aboutContent">
               <div className="pre">
-                <div className="speech-bubble brightB" style={{ color: '#05386b' }}>
-                  <div className="hi">Hi!</div><br />
+                <div className="speech-bubble brightB">
+                  <div className="hi">Hi :)</div><br />
                   <div className="aboutWords">
                         My name is Daniel Braverman, I am 26 years old from Ramat Gan, Israel; I am a Full Stack Engineer with a B.Sc in Computer Science 
                         from Ben Gurion University of the Negev.
                         I am very motivated and hard working person that loves to face challanges, and software development
-                        is my real passion. <br />Hebrew is my mother tongue, and I am fluent in English and Russian.
+                        is my real passion. {/*<br />Hebrew is my mother tongue, and I am fluent in English and Russian.*/}
                   </div>
                 </div>
               </div>
+              <div style={{ textAlign: 'center', fontSize: '2vw', paddingTop: '3vw'}}>
+              ◦◦◦
+              </div>
               <div className="interests">
-                <div className="interests-bubble brightG" style={{ color: '#05386b' }}>
+                <div className="interests-bubble brightG">
                   <b>Some of my interests</b>
                   <br /><br />
                   <div className="circles">
@@ -328,10 +323,9 @@ export default class Content extends React.Component {
     const { location } = this.state;
     const hide = location === -1 ? "hidden" : "visible";
     const educationParagraph = classNames("educationParagraph", "expBg");
-    const educationContent = classNames("educationContent", "blackScreenPar");
+    const educationContent = classNames("educationContent");
     return (
-      <div className={educationParagraph} ref={this.experienceRef}
-            style={{ backgroundImage: `url(${expBG})` }}>
+      <div className={educationParagraph} ref={this.experienceRef}>
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
@@ -341,68 +335,76 @@ export default class Content extends React.Component {
               <i><u>Working experience</u></i>
     </div>*/}
             
-            
-            <div className="lineItem" style={{ paddingTop: '5vh' }}>
-              <div className="speech-bubble brightB" style={{ display: 'flex' }}>
-                <div className="theLogo">
-                  <img src={atrinet} className="someLogo" />
+            <div style={{ display: 'flex' }}>
+              <div className="lineItem">
+                <div className="expItem" style={{ display: 'flex' }}>
+                  <div className="theLogo">
+                    <img src={atrinet} className="someLogo" />
+                  </div>
+                  <div className="theWords">
+                    <b>2019 - Current: Full Stack Engineer (Atrinet):</b>
+                    <br />
+                    › Took part of developing a Web UI from scratch with Angular and React.<br />
+                    › Designed and developed efficient and maintainable software in Java, both client and server side.<br />
+                    › Implemented REST API using Spring boot.<br />
+                    › Wrote NMS Data Collectors in Python.<br />
+                    › Wrote Data Migration software using XQuery.
+                  </div>
                 </div>
-                <div className="theWords">
-                  <b>2019 - Current: Full Stack Engineer (Atrinet):</b>
-                  <br />
-                  › Took part of developing a Web UI from scratch with Angular and React.<br />
-                  › Designed and developed efficient and maintainable software in Java, both client and server side.<br />
-                  › Implemented REST API using Spring boot.<br />
-                  › Wrote NMS Data Collectors in Python.<br />
-                  › Wrote Data Migration software using XQuery.
+              </div>
+
+              
+              <div className="lineItem">
+                <div className="expItem" style={{ display: 'flex' }}>
+                  <div className="theLogo">
+                    <img src={bright} className="someLogo" />
+                  </div>
+                  <div className="theWords">
+                    <b>2018: Ashalim solar power plant Control Room Operator (BrightSource):</b>
+                    <br />
+                    › Operation of solar field and power plant.<br />
+                    › Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
+                    › Real time problem solving and investigation of malfunctions.<br />
+                    › Using a variety of computer systems and data bases.<br />
+                    › Working in an international multicultural environment.
+                  </div>
                 </div>
               </div>
             </div>
 
-            
-            <div className="lineItem" style={{ paddingLeft: '35vw' }}>
-              <div className="interests-bubble brightG" style={{ display: 'flex' }}>
-                <div className="theLogo">
-                  <img src={bright} className="someLogo" />
+            <div style={{ textAlign: 'center', fontSize: '3vw', paddingTop: '2vw' }}>
+              ◦◦◦
+            </div>
+
+            <div style={{ display: 'flex' }}>
+              <div className="lineItem">
+                <div className="expItem">
+                  <div className="theLogo">
+                    <img src={nach} className="someLogo" />
+                  </div>
+                  <div className="theWords">
+                    <b>2016 - 2019: Private Tutor of Mathematics – 5 unit high school students</b>
+                  </div>
                 </div>
-                <div className="theWords">
-                  <b>2018: Ashalim solar power plant Control Room Operator (BrightSource):</b>
-                  <br />
-                  › Operation of solar field and power plant.<br />
-                  › Taking part in the plant establishment process – tests, verifications, user interface improvement.<br />
-                  › Real time problem solving and investigation of malfunctions.<br />
-                  › Using a variety of computer systems and data bases.<br />
-                  › Working in an international multicultural environment.
+              </div>
+
+              <div className="lineItem">
+                <div className="expItem">
+                  <div className="theLogo">
+                    <img src={gs} className="someLogo" />
+                  </div>
+                  <div className="theWords">
+                    <b>2014 - 2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):</b><br />
+                    › Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
+                    › Production floor management and maintenance using computer systems (Citect SCADA software).<br />
+                    › Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
+                    › Conduction with senior executives – ongoing reports and presentation of results.<br />
+                    
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="lineItem">
-              <div className="speech-bubble brightB" style={{ display: 'flex' }}>
-                <div className="theLogo">
-                  <img src={nach} className="someLogo" />
-                </div>
-                <div className="theWords">
-                  <b>2016 - 2019: Private Tutor of Mathematics – 5 unit high school students</b>
-                </div>
-              </div>
-            </div>
-
-            <div className="lineItem" style={{ paddingLeft: '33vw' }}>
-              <div className="interests-bubble brightG" style={{ display: 'flex' }}>
-                <div className="theLogo">
-                  <img src={gs} className="someLogo" />
-                </div>
-                <div className="theWords">
-                  <b>2014 - 2016: Shift manager and control room operator, Primor (as part of Gan Shmuel Foods INC.):</b><br />
-                  › Shift managing: Task distribution to 3 team members and full responsibility over production.<br />
-                  › Production floor management and maintenance using computer systems (Citect SCADA software).<br />
-                  › Consistent interface with various departments – Packaging, Head food engineer, Laboratory, etc.<br />
-                  › Conduction with senior executives – ongoing reports and presentation of results.<br />
-                  
-                </div>
-              </div>
-            </div>
             <br />
             <div className="subTitle">
               <i><u>University projects (More projects can be seen in GitHub)</u></i>
@@ -761,14 +763,14 @@ export default class Content extends React.Component {
     return (
         <div className={logoAndName}>
 
-          <div className="logoAndNameContact">
+          {/*<div className="logoAndNameContact">
               {this.generateContact()}
-          </div>
+    </div>*/}
 
           <div className="headlineAndButtons">
             <div className="headline">
                 <div className="name">
-                  <img src={logotry} className="logtry" />
+                  Daniel Braverman
                 </div>
                 <div className={slogan}></div>
             </div>
@@ -798,6 +800,15 @@ export default class Content extends React.Component {
                     CONTACT
                   </div>
                 </div>
+                {/*<div className="phoneNumber">
+                  <div className="phoneSVG">
+                    <svg className="phone" fill="#003B46" viewBox="0 0 24 24"><path d="M16 11h5l-9 10-9-10h5v-11h8v11zm3 8v3h-14v-3h-2v5h18v-5h-2z"/></svg>
+                  </div>
+                  <div className="theNumber">
+                    &nbsp;Download CV
+                  </div>
+                </div>
+  */}
             </div>
           </div>
         </div>

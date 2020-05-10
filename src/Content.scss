@@ -18,10 +18,11 @@
 
 
 .aboutContent {
-  font-size: 1.1vw;
+  font-size: 1.6vw;
   padding-left: 9vw;
   padding-right: 9vw;
-  padding-top: 20vh;
+  padding-top: 7vw;
+  color: black !important;
 }
 
 .aboutParagraph {
@@ -34,9 +35,9 @@
 }
 
 .hi {
-    font-size: 2vw;
+    font-size: 2.8vw;
     font-weight: 600;
-    color: #EDF5E1;
+    //color: #EDF5E1;
 }
 
 .educationParagraph {
@@ -51,14 +52,15 @@
 }
 
 .eduWords {
-  padding-top: 3vh;
-  color: #EDF5E1;
-  padding-top: 15vh;
+  padding-top: 6vw;
+  color: black;
 }
 
 .lineItem {
   display: flex;
-  padding-top: 3vh;
+  width: 50%;
+  padding-top: 1vw;
+  padding-left: 1vw;
 }
 
 .blackScreenPar {
@@ -96,7 +98,7 @@
 
 .theWords {
   //display: flex;
-  font-size: 1vw;
+  font-size: 1.2vw;
   padding-left: 1vw;
   width: 80%;
   z-index: 10;
@@ -300,15 +302,16 @@
   }
 
   .logoAndName {
-    padding-top: 2vh;
+    //padding-top: 1vw;
     //display: flex;
     padding-left: 8vw;
     position: fixed;
     z-index: 10000;
     width: 100vw;
-    padding-bottom: 1.5vh;
     animation: fadein 0.15s;
-    color: #05386B;
+    color: #232020;
+    background-color: #ff7315;
+    border-bottom: 1vw solid #f4f4f4;
   }
 
   .hidden {
@@ -324,8 +327,8 @@
   }
 
   .black {
-    color: #05386B;
-    background-color: #FFFFFF;
+   // color: #05386B;
+    //background-color: #FFFFFF;
   }
 
   .headline {
@@ -333,9 +336,9 @@
   }
   
   .name {
-    font-size: 2vw;
+    font-size: 2.6vw;
     font-weight: 600;
-    width: 36vw;
+    //width: 5vw;
     //padding-top: 1vh;
     //background-image: url('');
   }
@@ -360,17 +363,18 @@
 
   .buttons {
     display: flex;
-    padding-left: 13.5vw;
+    padding-left: 25vw;
+    padding-top: 2vw;
   }
   
   .button {
     margin-left: 3vw;
-    padding-top: 2vh;
+    //padding-top: 2vh;
   }
   
   .buttonText {
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 1vw;
     cursor: pointer;
     transition: all 0.15s linear;
    // border-bottom: 0.2vw solid #AEBD38;
@@ -379,19 +383,19 @@
   }
   
   .buttonText:hover {
-    color: #379683;
+    color: #f4f4f4;
     border-bottom: none;
-    border-top: 0.2vw solid #379683;
+    border-top: 0.2vw solid #f4f4f4;
     transition: all 0.15s linear;
   }
   
   .selected {
-    color: #379683;
+    color: #f4f4f4;
     text-align: center;
-    font-size: 0.8vw;
+    font-size: 1vw;
     cursor: pointer;
     border-bottom: none;
-    border-top: 0.2vw solid #379683;
+    border-top: 0.2vw solid #f4f4f4;
   }
   
   .phoneNumber {
@@ -419,6 +423,7 @@
     display: flex;
   }
   .contactInfo {
+    padding-top: 1vw;
     font-size: 0.8vw;
     padding-left: 78.6vw;
     display: flex;
@@ -563,15 +568,16 @@
   }
 
   .speech-bubble {
-    color: #05386B;
-    position: relative;
-    background: #379683;
-    border-radius: .4vw;
-    padding: 1vw;
+    //color: #05386B;
+    //position: relative;
+    //background: #379683;
+    //border-radius: .4vw;
+    //padding: 1vw;
+    
   }
   
   .speech-bubble:after {
-    content: '';
+    /*content: '';
     position: absolute;
     top: 0;
     left: 8%;
@@ -582,19 +588,19 @@
     border-top: 0;
     border-left: 0;
     margin-left: -2vw;
-    margin-top: -2vw;
+    margin-top: -2vw;*/
   }
 
   .interests-bubble {
-    color: #05386B;
+    /*color: #05386B;
     position: relative;
     background: #379683;
     border-radius: .4vw;
-    padding: 1vw;
+    padding: 1vw;*/
   }
   
   .interests-bubble:after {
-    content: '';
+    /*content: '';
     position: absolute;
     top: 0;
     left: 92%;
@@ -605,39 +611,46 @@
     border-top: 0;
     border-right: 0;
     margin-left: -2vw;
-    margin-top: -2vw;
+    margin-top: -2vw;*/
   }
 
   .interests {
-    padding-top: 13vh;
-    padding-left: 45vw;
+    padding-top: 3vw;
+    //padding-left: 45vw;
+    text-align: center;
   }
 
   .pre {
-    padding-right: 10vw;
+    //padding-right: 10vw;
   }
 
   .brightB {
-    background-color: #5CDB95;
+    //background-color: #5CDB95;
   }
 
   .brightB:after {
-    border-bottom-color: #5CDB95;
+   // border-bottom-color: #5CDB95;
   }
   
   .brightG {
-    background-color: #8EE4AF;
+    //background-color: #8EE4AF;
   }
 
   .brightG:after {
-    border-bottom-color: #8EE4AF;
+    //border-bottom-color: #8EE4AF;
   }
 
   .brightH {
-    background-color: #8EE4AF;
+    //background-color: #8EE4AF;
   }
 
   .brightH:after {
-    border-bottom-color: #8EE4AF;
+   // border-bottom-color: #8EE4AF;
   }
   
+  .expItem {
+    padding: 1vw;
+    display: flex;
+    background-color: #f4f4f4;
+    width: 90%;
+  }
