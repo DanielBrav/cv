@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import classNames from 'classnames';
 import styles from './Content.scss';
 import hadera from './haderalogo.jpg';
@@ -325,11 +325,15 @@ export default class Content extends React.Component {
     const educationParagraph = classNames("educationParagraph", "expBg");
     const educationContent = classNames("educationContent");
     return (
+      <Fragment>
+      <div style={{ textAlign: 'center', fontSize: '3vw', paddingTop: '', color: 'black' }}>
+      ◦◦◦
+      </div>
       <div className={educationParagraph} ref={this.experienceRef}>
         <div className={educationContent}>
           <div className="eduWords">
             <div className="hi">
-              EXPERIENCE
+              Experience
             </div>
             {/*<div className="subTitle">
               <i><u>Working experience</u></i>
@@ -435,6 +439,7 @@ export default class Content extends React.Component {
           </div>
         </div>
       </div>
+      </Fragment>
     )
   }
 
@@ -770,7 +775,7 @@ export default class Content extends React.Component {
           <div className="headlineAndButtons">
             <div className="headline">
                 <div className="name">
-                  Daniel Braverman
+                  DANIEL BRAVERMAN
                 </div>
                 <div className={slogan}></div>
             </div>
