@@ -310,10 +310,34 @@
     width: 100vw;
     animation: fadein 0.15s;
     color: #232020;
-    background-color: #ff7315;
     border-bottom: 1vw solid #f4f4f4;
+    transition: all 0.2s linear;
   }
 
+  .headerBg0 {
+    background-color: #ffba5a;
+  }
+
+  .headerBg-1 {
+    background-color: #ffba5a;
+  }
+
+  .headerBg1 {
+    background-color: #f4e04d;
+  }
+
+  .headerBg2 {
+    background-color: #8db1ab;
+  }
+
+  .headerBg3 {
+    background-color: #cee397;
+  }
+
+  .headerBg4 {
+    background-color: #ff7315;
+  }
+  
   .hidden {
     visibility: hidden;
   }
@@ -385,6 +409,7 @@
     color: #f4f4f4;
     border-bottom: none;
     border-top: 0.2vw solid #f4f4f4;
+    border-radius: 0.2vw;
     transition: all 0.15s linear;
   }
   
@@ -394,6 +419,7 @@
     font-size: 1vw;
     cursor: pointer;
     border-bottom: none;
+    border-radius: 0.2vw;
     border-top: 0.2vw solid #f4f4f4;
   }
   
@@ -455,8 +481,8 @@
   }
 
   .circle {
-    height: 7vw;
-    width: 7vw;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
     background-color: #817e7e;
     color: #FFFFFF;
@@ -464,7 +490,7 @@
     align-items: center;
     display: flex;
     transition: all 0.2s linear;
-    font-size: 0.8vw;
+    font-size: 1vw;
     opacity: 0.6;
   }
 
