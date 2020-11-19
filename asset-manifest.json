@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/cv/static/css/main.03e11e7a.chunk.css",
-    "main.js": "/cv/static/js/main.e53efabf.chunk.js",
-    "main.js.map": "/cv/static/js/main.e53efabf.chunk.js.map",
+    "main.css": "/cv/static/css/main.847575b0.chunk.css",
+    "main.js": "/cv/static/js/main.bd648095.chunk.js",
+    "main.js.map": "/cv/static/js/main.bd648095.chunk.js.map",
     "runtime~main.js": "/cv/static/js/runtime~main.6f651ed7.js",
     "runtime~main.js.map": "/cv/static/js/runtime~main.6f651ed7.js.map",
-    "static/js/2.35aa83ec.chunk.js": "/cv/static/js/2.35aa83ec.chunk.js",
-    "static/js/2.35aa83ec.chunk.js.map": "/cv/static/js/2.35aa83ec.chunk.js.map",
+    "static/js/2.1bba258a.chunk.js": "/cv/static/js/2.1bba258a.chunk.js",
+    "static/js/2.1bba258a.chunk.js.map": "/cv/static/js/2.1bba258a.chunk.js.map",
     "index.html": "/cv/index.html",
-    "precache-manifest.fd759d848725a004a424ed44a90157b5.js": "/cv/precache-manifest.fd759d848725a004a424ed44a90157b5.js",
+    "precache-manifest.5d9c18259a9060ed464ef494fa1210bf.js": "/cv/precache-manifest.5d9c18259a9060ed464ef494fa1210bf.js",
     "service-worker.js": "/cv/service-worker.js",
-    "static/css/main.03e11e7a.chunk.css.map": "/cv/static/css/main.03e11e7a.chunk.css.map",
+    "static/css/main.847575b0.chunk.css.map": "/cv/static/css/main.847575b0.chunk.css.map",
     "static/media/atrinet.png": "/cv/static/media/atrinet.64e09fa7.png",
     "static/media/bg.jpg": "/cv/static/media/bg.78aa8dee.jpg",
     "static/media/bgulogo.png": "/cv/static/media/bgulogo.668bdcdb.png",
-    "static/media/Content.scss": "/cv/static/media/study.a5b7d642.jpeg",
+    "static/media/code.jpeg": "/cv/static/media/code.8023d067.jpeg",
     "static/media/contact.jpg": "/cv/static/media/contact.4d1658ac.jpg",
     "static/media/experience.jpeg": "/cv/static/media/experience.e085d64d.jpeg",
     "static/media/github.png": "/cv/static/media/github.7e80f5c0.png",
     "static/media/haderalogo.jpg": "/cv/static/media/haderalogo.b6fcbe4c.jpg",
     "static/media/linkedin.png": "/cv/static/media/linkedin.15fd5adb.png",
-    "static/media/logo.jpg": "/cv/static/media/logo.26309393.jpg"
+    "static/media/logo.jpg": "/cv/static/media/logo.26309393.jpg",
+    "static/media/Content.scss": "/cv/static/media/study.a5b7d642.jpeg"
   }
 }
